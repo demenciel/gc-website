@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Drawer } from "@mui/material";
 import { Menu } from "@mui/icons-material";
 import logo from "../assets/logo.jpg";
 
@@ -12,7 +13,7 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="h-8" />{" "}
       </div>
       <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <Menu color="#ECD8BD"/>
+        <Menu color="#ECD8BD" />
       </button>
       <div className="flex space-x-4 hidden md:flex">
         <a href="#">Accueil</a>
@@ -21,9 +22,30 @@ const Navbar = () => {
       </div>
       <div className="flex space-x-4 hidden md:flex">
         <button className="px-8 py-2">
-          <span href="#" className="text-primary">Services</span>
+          <span href="#" className="text-primary">
+            Services
+          </span>
         </button>
       </div>
+      <Drawer
+        anchor="right"
+        open={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
+      >
+        <div
+          style={{ width: "200px" }}
+          className="bg-background flex flex-col items-center justify-center h-full space-y-8"
+        >
+          <a href="#">Accueil</a>
+          <a href="#">À propos</a>
+          <a href="#">Services</a>
+          <button className="px-8 py-2">
+            <span href="#" className="text-primary">
+              Services
+            </span>
+          </button>
+        </div>
+      </Drawer>
     </div>
   );
 };

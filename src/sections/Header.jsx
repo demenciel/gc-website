@@ -90,7 +90,7 @@ const Header = () => {
           <span className="w-[128px]">
             <WorkspacePremiumOutlinedIcon fontSize="large" />
             <p className="py-2">
-              Quality <br /> Services
+              Reconnue et certifiée
             </p>
           </span>
           <span className="w-[128px]">
