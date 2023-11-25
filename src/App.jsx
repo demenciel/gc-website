@@ -8,7 +8,7 @@ import {
   SpecialityBanner,
   SubscribeEmail,
 } from "./sections";
-import { Footer, Navbar } from "./components";
+import { Footer, Navbar, Sidebar } from "./components";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +16,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Sidebar />
       <div className="min-w-320 min-h-screen flex flex-col">
         <Header />
         <SpecialityBanner />

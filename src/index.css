@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Quicksand, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -15,6 +16,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  height: calc(100vh - 128px);
 }
 
 a {
@@ -53,6 +58,25 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.icon-link {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icon-image {
+  transition: filter 0.3s ease;
+}
+
+.dark-icons {
+  color: #242424; /* This filter turns the image white */
+}
+
+.icon-link:hover .icon-image {
+  filter: brightness(0) invert(1); /* This filter turns the image white */
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {

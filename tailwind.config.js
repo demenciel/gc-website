@@ -13,6 +13,7 @@ export default {
         "2/3-screen": "66.666667vh",
         "1/4-screen": "25vh",
         "3/4-screen": "75vh",
+        "full-screen": "100vh"
       },
       width: {
         "1/2-screen": "50vw",
