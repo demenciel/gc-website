@@ -24,17 +24,11 @@ const SubscribeEmail = () => {
           <Paper
             component="form"
             sx={{
-              p: "2px 4px",
+              p: "8px 8px",
               display: "flex",
               alignItems: "center",
               borderRadius: 16,
               width: "100%",
-              maxWidth: "60%", // Limit width on large screens
-              margin: "0 auto", // Center horizontally
-              "@media (min-width: 768px)": {
-                width: "auto", // Reset width on large screens
-                maxWidth: "80%", // Increase width on large screens
-              },
             }}
           >
             <InputBase

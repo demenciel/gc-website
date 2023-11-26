@@ -7,8 +7,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    // This ensures the navbar takes the full width and does not shrink or grow disproportionately
-    <div className="flex h-[128px] text-lg flex-grow items-center justify-between w-full py-6 p-section-padding lg:p-section-padding-xl">
+    <div className="fixed md:relative flex h-[128px] text-lg flex-grow items-center justify-between w-full py-6 p-section-padding lg:p-section-padding-xl z-20">
       <div className="">
         <img src={logo} alt="logo" className="h-24" />{" "}
       </div>
@@ -18,11 +17,11 @@ const Navbar = () => {
       <div className="flex space-x-4 hidden md:flex">
         <a href="#header">Accueil</a>
         <a href="#ourservices">Services</a>
-        <a href="#">À propos</a>
+        <a href="#aboutme">À propos</a>
       </div>
       <div className="flex space-x-4 hidden md:flex">
         <button className="px-8 py-2">
-          <span href="#" className="text-primary">
+          <span href="https://www.facebook.com/profile.php?id=100064845977672&sk=services" className="text-primary">
             Prendre rendez-vous
           </span>
         </button>
@@ -31,6 +30,7 @@ const Navbar = () => {
         anchor="right"
         open={isMenuOpen}
         onClose={() => setIsMenuOpen(false)}
+        onClick={() => setIsMenuOpen(false)}
       >
         <div
           style={{ width: "200px" }}
@@ -38,9 +38,9 @@ const Navbar = () => {
         >
           <a href="#header">Accueil</a>
           <a href="#ourservices">Services</a>
-          <a href="#">À propos</a>
+          <a href="#aboutme">À propos</a>
           <button className="px-8 py-2">
-            <span href="#" className="text-primary">
+            <span href="https://www.facebook.com/profile.php?id=100064845977672&sk=services" className="text-primary">
             Prendre rendez-vous
             </span>
           </button>

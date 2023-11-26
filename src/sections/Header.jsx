@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div
       id="header"
-      className="header flex flex-col items-center overflow-hidden"
+      className="header flex flex-col items-center overflow-hidden -translate-y-[-128px]  md:-translate-y-0  "
     >
       <div className="flex flex-col flex-grow md:flex-row lg:flex-row ">
         <div className="p-8 md:w-1/2 lg:w-1/2 flex flex-grow relative justify-center items-center">
@@ -89,9 +89,7 @@ const Header = () => {
           </span>
           <span className="w-[128px]">
             <WorkspacePremiumOutlinedIcon fontSize="large" />
-            <p className="py-2">
-              Reconnue et certifiée
-            </p>
+            <p className="py-2">Reconnue et certifiée</p>
           </span>
           <span className="w-[128px]">
             <ThumbUpOffAltOutlinedIcon fontSize="large" />
