@@ -2,8 +2,7 @@ import React from "react";
 
 import vector from "../assets/Vector.png";
 import group from "../assets/Group.png";
-import image1 from "../assets/Photos site genny/Freckles/received_726974499283427.jpeg";
-import image2 from "../assets/Photos site genny/Lipblush /received_879035597100290.jpeg";
+import image2 from "../assets/Photos site genny/Freckles/2e70c3bd-847c-4a03-b258-1fb52af2202d.png";
 
 const SpecialityBanner = () => {
   return (
@@ -55,11 +54,8 @@ const SpecialityBanner = () => {
         </svg>
       </div>
 
-      <div className="md:w-1/2 lg:w-1/2 relative hidden md:flex">
-        <img
-          src={image2}
-          className="object-cover w-[400px] h-[350px] absolute top-24 left-10"
-        />
+      <div className="md:w-3/4 lg:w-3/4 relative hidden md:flex p-32">
+        <img src={image2} className="object-cover" />
       </div>
       <img
         src={group}
@@ -75,7 +71,10 @@ const SpecialityBanner = () => {
           L'expertise rencontre le bien-être chez Genny Santé & Beauté.
         </p>
         <button className="px-8 py-2 w-1/2 self-center md:self-start">
-          <span href="#" className="text-primary">
+          <span
+            href="https://www.facebook.com/profile.php?id=100064845977672&sk=services"
+            className="text-primary"
+          >
             Prendre rendez-vous
           </span>
         </button>
