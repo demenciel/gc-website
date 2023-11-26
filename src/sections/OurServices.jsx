@@ -53,8 +53,8 @@ const CarouselCard = ({ title, imageUrl, cta }) => {
         alt={title}
         className="w-[272px] h-[400px] object-cover rounded-t-lg"
       />
-      <div className="hidden md:flex  absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-black to-transparent transition duration-300 ease-in-out group-hover:opacity-0"></div>
-      <h3 className="mt-4 text-lg font-semibold py-2 absolute bottom-20">
+      <div className="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-black to-transparent transition duration-300 ease-in-out group-hover:opacity-0"></div>
+      <h3 className="mt-4 text-lg font-bold py-2 absolute bottom-20 ">
         {title}
       </h3>
       <button className="mt-2 bg-primary text-white py-2 px-4 rounded-full absolute bottom-8 group-hover:drop-shadow-lg">
@@ -71,7 +71,7 @@ const OurServices = () => {
 
   return (
     <div id="ourservices" className="w-full bg-primary relative">
-      <div className="py-16">
+      <div className="pb-16 pt-10">
         <div className="w-full h-1/4 pb-8">
           <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl py-8 text-background">
             Our Services

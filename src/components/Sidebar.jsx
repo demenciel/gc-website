@@ -9,7 +9,7 @@ const Sidebar = () => {
   return (
     <div
       id="sidebar"
-      className="w-[64px] md:w-[64px] h-full z-10 fixed top-1/2 -translate-y-1/2 flex flex-col p-8 justify-center"
+      className="hidden md:flex w-[64px] md:w-[64px] h-full z-10 fixed top-1/2 -translate-y-1/2 flex flex-col p-8 justify-center"
     >
       <div id="sidebar-icons" className="h-1/2 flex flex-col justify-evenly">
         <a

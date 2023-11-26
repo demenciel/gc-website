@@ -4,7 +4,7 @@ import {
   AboutMe,
   Header,
   OurServices,
-  SpecialOffers,
+  Reviews,
   SpecialityBanner,
   SubscribeEmail,
 } from "./sections";
@@ -22,7 +22,7 @@ function App() {
         <SpecialityBanner />
         <OurServices />
         <AboutMe />
-        <SpecialOffers />
+        <Reviews />
         <SubscribeEmail />
         <Footer />
       </div>

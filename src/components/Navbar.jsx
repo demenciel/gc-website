@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="flex space-x-4 hidden md:flex">
         <button className="px-8 py-2">
           <span href="#" className="text-primary">
-            Services
+            Prendre rendez-vous
           </span>
         </button>
       </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
           <a href="#">À propos</a>
           <button className="px-8 py-2">
             <span href="#" className="text-primary">
-              Services
+            Prendre rendez-vous
             </span>
           </button>
         </div>

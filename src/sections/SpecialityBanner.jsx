@@ -70,7 +70,7 @@ const SpecialityBanner = () => {
           personnalisés sont conçus pour revitaliser votre corps et esprit.
           L'expertise rencontre le bien-être chez Genny Santé & Beauté.
         </p>
-        <button className="px-8 py-2 w-1/2 self-center md:self-start">
+        <button className="px-8 py-2 w-1/2 self-center md:self-start w-full md:w-1/2">
           <span
             href="https://www.facebook.com/profile.php?id=100064845977672&sk=services"
             className="text-primary"
