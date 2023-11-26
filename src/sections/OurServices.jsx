@@ -10,27 +10,27 @@ const carouselData = [
   {
     title: "Ombrebrow/Nanobrow",
     imageUrl: ombrebrow,
-    cta: "Learn More",
+    cta: "En Apprendre plus",
   },
   {
     title: "Freckles",
     imageUrl: freckles,
-    cta: "Learn More",
+    cta: "En Apprendre plus",
   },
   {
     title: "Eyeliner",
     imageUrl: eyeliner,
-    cta: "Learn More",
+    cta: "En Apprendre plus",
   },
   {
     title: "Microblading",
     imageUrl: microblading,
-    cta: "Learn More",
+    cta: "En Apprendre plus",
   },
   {
     title: "Lipblush",
     imageUrl: lipblush,
-    cta: "Learn More",
+    cta: "En Apprendre plus",
   },
 ];
 

@@ -21,9 +21,9 @@ const Navbar = () => {
       </div>
       <div className="flex space-x-4 hidden md:flex">
         <button className="px-8 py-2">
-          <span href="https://www.facebook.com/profile.php?id=100064845977672&sk=services" className="text-primary">
+          <a href="https://www.facebook.com/profile.php?id=100064845977672&sk=services" className="text-primary">
             Prendre rendez-vous
-          </span>
+          </a>
         </button>
       </div>
       <Drawer
@@ -40,9 +40,9 @@ const Navbar = () => {
           <a href="#ourservices">Services</a>
           <a href="#aboutme">À propos</a>
           <button className="px-8 py-2">
-            <span href="https://www.facebook.com/profile.php?id=100064845977672&sk=services" className="text-primary">
+            <a href="https://www.facebook.com/profile.php?id=100064845977672&sk=services" className="text-primary">
             Prendre rendez-vous
-            </span>
+            </a>
           </button>
         </div>
       </Drawer>

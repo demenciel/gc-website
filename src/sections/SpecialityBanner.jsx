@@ -71,12 +71,12 @@ const SpecialityBanner = () => {
           L'expertise rencontre le bien-être chez Genny Santé & Beauté.
         </p>
         <button className="px-8 py-2 w-1/2 self-center md:self-start w-full md:w-1/2">
-          <span
+          <a
             href="https://www.facebook.com/profile.php?id=100064845977672&sk=services"
             className="text-primary"
           >
             Prendre rendez-vous
-          </span>
+          </a>
         </button>
       </div>
       <div className="hidden md:flex absolute bottom-0 left-[-140px] opacity-50 w-[512px]">
