@@ -11,7 +11,6 @@ import {
 import { Footer, Navbar, Sidebar } from "./components";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
