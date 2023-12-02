@@ -16,13 +16,13 @@ const Sidebar = () => {
           href="https://www.facebook.com/profile.php?id=100064845977672"
           className="icon-link"
         >
-          <FacebookOutlined fontSize="large" className="icon-image" />
+          <FacebookOutlined fontSize="large" className="" />
         </a>
         <a
           href="https://www.instagram.com/genny.sante.beaute/"
           className="icon-link"
         >
-          <Instagram fontSize="large" />
+          <Instagram fontSize="large" className="" />
         </a>
         <a href="mailto:gennysantebeaute@gmail.com" className="icon-link">
           <EmailOutlined fontSize="large" />

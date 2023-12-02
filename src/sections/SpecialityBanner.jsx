@@ -1,16 +1,16 @@
 import React from "react";
 
-import vector from "../assets/Vector.png";
+import vector from "../assets/Création sans titre(3).png";
 import group from "../assets/Group.png";
-import image2 from "../assets/Photos site genny/Freckles/2e70c3bd-847c-4a03-b258-1fb52af2202d.png";
+import image2 from "../assets/Photos site genny/47b8b599-fb76-45d4-8c30-f0a1cd49b04b.png";
 
 const SpecialityBanner = () => {
   return (
     <div
       id="specialitybanner"
-      className="w-full px-8 md:px-16 h-3/4-screen relative flex flex-col flex-grow md:flex-row lg:flex-row overflow-hidden justify-evenly"
+      className="relative w-full px-8 md:px-16 h-3/4-screen relative flex flex-col flex-grow md:flex-row lg:flex-row overflow-clip justify-evenly items-center"
     >
-      <div className=" absolute bottom-top right-0 opacity-50 w-[512px]">
+      <div className=" absolute bottom-top right-0 opacity-50 md:w-[512px] w-[256px] object-scale-down">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -59,9 +59,9 @@ const SpecialityBanner = () => {
       </div>
       <img
         src={group}
-        className="rotate-[105deg] object-cover absolute right-0 z-0 bottom-0 md:w-1/4 w-1/2"
+        className="rotate-[75deg] object-scale-down hidden md:block absolute right-[-50px] z-0 bottom-[-70px] md:w-1/4 w-1/2"
       />
-      <div className="w-full md:w-1/2 lg:w-1/2  md:text-left text-center flex flex-col justify-center pl-10 lg:pl-20 space-y-4 z-10">
+      <div className="pt-32 md:pt-0 w-full md:w-1/2 text-center md:text-left flex flex-col justify-center md:pl-10 space-y-4 z-10">
         <h1 className="text-4xl font-bold text-primary mb-4">
           Services de qualités
         </h1>
@@ -70,7 +70,7 @@ const SpecialityBanner = () => {
           personnalisés sont conçus pour revitaliser votre corps et esprit.
           L'expertise rencontre le bien-être chez Genny Santé & Beauté.
         </p>
-        <button className="px-8 py-2 w-1/2 self-center md:self-start w-full md:w-1/2">
+        <button className="px-8 py-2 w-1/2 self-center md:self-start w-full lg:w-1/2">
           <a
             href="https://www.facebook.com/profile.php?id=100064845977672&sk=services"
             className="text-primary"
@@ -121,9 +121,6 @@ const SpecialityBanner = () => {
             ></ellipse>
           </g>
         </svg>
-      </div>
-      <div className="absolute bottom-[-60px] left-0">
-        <img src={vector} alt="" />
       </div>
     </div>
   );

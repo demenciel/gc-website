@@ -53,7 +53,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #ECD8BD;
+  border-color: #ffd0d7;
 }
 button:focus,
 button:focus-visible {
@@ -64,6 +64,8 @@ button:focus-visible {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.25s;
+  color: #f6e5e5;
 }
 
 .icon-image {
@@ -76,6 +78,31 @@ button:focus-visible {
 
 .icon-link:hover .icon-image {
   filter: brightness(0) invert(1); /* This filter turns the image white */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  color: #242424;
+}
+
+.swiper-button-next {
+  right: 0px; /* Adjust as needed */
+}
+
+.swiper-button-prev {
+  left: 0px; /* Adjust as needed */
+}
+
+/* Adjust pagination position */
+.swiper-pagination {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 10%;
+  color: #242424
 }
 
 

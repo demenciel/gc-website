@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ECD8BD",
+        primary: "#ffd0d7",
         background: "#242424",
+        cta: "#f6e5e5",
         text: "#fff",
       },
       height: {
@@ -14,7 +15,7 @@ export default {
         "2/3-screen": "66.666667vh",
         "1/4-screen": "25vh",
         "3/4-screen": "75vh",
-        "full-screen": "100vh"
+        "full-screen": "100vh",
       },
       width: {
         "1/2-screen": "50vw",
@@ -29,12 +30,12 @@ export default {
         "section-padding-xl": "0rem 8rem",
       },
       screens: {
-        'xs': '480px',       // Extra small devices (portrait phones)
-        'sm': '640px',       // Small devices (landscape phones)
-        'md': '768px',       // Medium devices (tablets)
-        'lg': '1024px',      // Large devices (desktops)
-        'xl': '1280px',      // Extra large devices (large desktops)
-        '2xl': '1536px',     // Extra extra large devices (larger desktops)
+        xs: "480px", // Extra small devices (portrait phones)
+        sm: "640px", // Small devices (landscape phones)
+        md: "768px", // Medium devices (tablets)
+        lg: "1024px", // Large devices (desktops)
+        xl: "1280px", // Extra large devices (large desktops)
+        "2xl": "1536px", // Extra extra large devices (larger desktops)
       },
     },
   },

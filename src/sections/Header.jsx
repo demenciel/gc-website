@@ -6,9 +6,6 @@ import ctaImage from "../assets/Photos site genny/Microblading /received_3770256
 import DiamondOutlinedIcon from "@mui/icons-material/DiamondOutlined";
 import WorkspacePremiumOutlinedIcon from "@mui/icons-material/WorkspacePremiumOutlined";
 import ThumbUpOffAltOutlinedIcon from "@mui/icons-material/ThumbUpOffAltOutlined";
-import { FacebookOutlined } from "@mui/icons-material";
-import { Instagram } from "@mui/icons-material";
-import { EmailOutlined } from "@mui/icons-material";
 const Header = () => {
   return (
     <div
@@ -18,11 +15,11 @@ const Header = () => {
       <div className="flex flex-col flex-grow md:flex-row lg:flex-row ">
         <div className="p-8 md:w-1/2 lg:w-1/2 flex flex-grow relative justify-center items-center">
           <div className="w-3/4 h-full flex flex-col justify-center mb-8">
-            <h1 className="text-3xl md:text-6xl font-bold text-primary">
+            <h1 className="text-3xl md:text-6xl font-bold text-cta">
               Genny Santé & Beauté
             </h1>
             <br />
-            <h3 className="text-lg md:text-2xl py-4 md:py-8 lg:pb-12">
+            <h3 className="text-lg md:text-2xl py-4 md:py-8 lg:pb-12 text-cta">
               Spécialiste en micropigmentation & maquillage permanent
             </h3>
           </div>
@@ -32,7 +29,7 @@ const Header = () => {
           <img className="object-cover z-10" src={lady} alt="lady" />
           <img
             src={ellipse}
-            className="object-cover absolute z-0 xl:left-20 opacity-50 bottom-[-100px]"
+            className="object-cover absolute z-0 opacity-50 xl:left-[-10px] bottom-[-140px]"
             alt="ellipse"
           />
           <div className="absolute inset-0 z-0 opacity-50 bottom-0">
@@ -83,15 +80,15 @@ const Header = () => {
       {/* banner */}
       <div className="w-full h-[64px] sm:h-[128px] bg-primary text-[#000] flex items-center pl-16 absolute bottom-0">
         <div className=" hidden md:flex xl:space-x-20">
-          <span className="w-[128px]">
+          <span className="w-[128px] text-background">
             <DiamondOutlinedIcon fontSize="large" />
             <p className="py-2">Services de Qualités</p>
           </span>
-          <span className="w-[128px]">
+          <span className="w-[128px] text-background">
             <WorkspacePremiumOutlinedIcon fontSize="large" />
             <p className="py-2">Reconnue et certifiée</p>
           </span>
-          <span className="w-[128px]">
+          <span className="w-[128px] text-background">
             <ThumbUpOffAltOutlinedIcon fontSize="large" />
             <p className="py-2">Satisfaction Garanti</p>
           </span>
