@@ -11,7 +11,6 @@ import {
 import { Footer, Navbar, Sidebar } from "./components";
 
 function App() {
-
   return (
     <>
       <Navbar />
@@ -21,8 +20,8 @@ function App() {
         <SpecialityBanner />
         <OurServices />
         <AboutMe />
-        <Reviews />
-        <SubscribeEmail />
+        {/* <Reviews />
+        <SubscribeEmail /> */}
         <Footer />
       </div>
     </>

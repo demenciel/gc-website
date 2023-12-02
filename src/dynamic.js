@@ -14,11 +14,6 @@ window.addEventListener("scroll", () => {
   } else {
     sidebarIcons.forEach((icon) => icon.classList.toggle("dark-icons", false));
   }
-  if (checkOverlap(sidebarRect, section2?.getBoundingClientRect())) {
-    sidebarIcons.forEach((icon) => icon.classList.toggle("dark-icons", true));
-  } else {
-    sidebarIcons.forEach((icon) => icon.classList.toggle("dark-icons", false));
-  }
 });
 
 function checkOverlap(rect1, rect2) {

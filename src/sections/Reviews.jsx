@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import ombrebrow from "../assets/Photos site genny/Ombrebrow-nanobrow/received_688841509775996.jpeg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import "swiper/css"; // basic Swiper styles
+import "swiper/css/navigation"; // if you are using navigation module
+import "swiper/css/pagination";
 
 const carouselData = [
   {
@@ -49,7 +53,6 @@ const Reviews = () => {
       try {
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data);
         setRatings(data);
       } catch (error) {
         console.error("Error fetching ratings:", error);
@@ -60,7 +63,7 @@ const Reviews = () => {
   }, []);
 
   return (
-    <div id="reviews" className="w-full bg-primary relative">
+    <div id="reviews" className="w-full h-3/4-screen bg-primary relative">
       <div className="pb-16 pt-10">
         <div className="w-full h-1/4 pb-8">
           <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl py-8 text-background">
@@ -69,19 +72,36 @@ const Reviews = () => {
         </div>
         <div className="w-full h-3/4 px-8 md:px-32">
           <Swiper
-            spaceBetween={30}
+            modules={[Navigation, Pagination, A11y]}
+            spaceBetween={40} // Add space between slides
             slidesPerView={1}
+            centeredSlides={true} // Center the active slide
+            loop={true} // Enable looping
+            speed={500} // Transition speed
+            autoHeight={true} // Adjust height to the active slide
+            navigation
+            pagination={{ clickable: true }}
             breakpoints={{
               768: {
                 slidesPerView: 2,
               },
               1024: {
                 slidesPerView: 3,
+                spaceBetween: 20,
               },
             }}
+            effect={"coverflow"}
+            coverflowEffect={{
+              rotate: 50, // Slide rotate in degrees
+              stretch: 0, // Stretch space between slides (in px)
+              depth: 100, // Depth offset in px (slides translate in Z axis)
+              modifier: 1, // Effect multiplier
+              slideShadows: true, // Enables slides shadows
+            }}
+            freeMode={true} // Enable free mode
           >
             {carouselData.map((card, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className="flex justify-center">
                 <CarouselCard {...card} />
               </SwiperSlide>
             ))}

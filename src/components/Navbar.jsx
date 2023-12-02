@@ -15,15 +15,37 @@ const Navbar = () => {
         <Menu color="#ECD8BD" />
       </button>
       <div className="flex text-primary space-x-4 hidden md:flex ">
-        <a href="#header" className="text-primary">Accueil</a>
-        <a href="#ourservices" className="text-primary">Services</a>
-        <a href="#aboutme" className="text-primary">À propos</a>
+        <a href="#header" className="text-primary">
+          Accueil
+        </a>
+        <a href="#ourservices" className="text-primary">
+          Services
+        </a>
+        <a href="#aboutme" className="text-primary">
+          À propos
+        </a>
       </div>
       <div className="flex space-x-4 hidden md:flex">
         <button className="px-8 py-2">
-          <a href="https://www.facebook.com/profile.php?id=100064845977672&sk=services" className="text-primary">
-            Prendre rendez-vous
-          </a>
+          <div
+            data-professionalpagename="gennysantebeaute"
+            data-bookingwidgeturlparams="companyId=134391"
+            data-language="fr"
+            data-label="Prendre un rendez-vous"
+            data-url="https://www.gorendezvous.com/"
+            class="gorendezvous-button"
+            data-buttoncolor="inverse"
+            data-width="280px"
+            data-height="50px"
+          >
+            <a
+              href="https://www.gorendezvous.com/gennysantebeaute?companyId=134391"
+              target="GOrendezvous"
+              className="text-primary"
+            >
+              Prendre un rendez-vous
+            </a>
+          </div>
         </button>
       </div>
       <Drawer
@@ -40,8 +62,11 @@ const Navbar = () => {
           <a href="#ourservices">Services</a>
           <a href="#aboutme">À propos</a>
           <button className="px-8 py-2">
-            <a href="https://www.facebook.com/profile.php?id=100064845977672&sk=services" className="text-primary">
-            Prendre rendez-vous
+            <a
+              href="https://www.facebook.com/profile.php?id=100064845977672&sk=services"
+              className="text-primary"
+            >
+              Prendre rendez-vous
             </a>
           </button>
         </div>

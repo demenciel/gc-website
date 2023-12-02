@@ -71,12 +71,25 @@ const SpecialityBanner = () => {
           L'expertise rencontre le bien-être chez Genny Santé & Beauté.
         </p>
         <button className="px-8 py-2 w-1/2 self-center md:self-start w-full lg:w-1/2">
-          <a
-            href="https://www.facebook.com/profile.php?id=100064845977672&sk=services"
-            className="text-primary"
+          <div
+            data-professionalpagename="gennysantebeaute"
+            data-bookingwidgeturlparams="companyId=134391"
+            data-language="fr"
+            data-label="Prendre un rendez-vous"
+            data-url="https://www.gorendezvous.com/"
+            class="gorendezvous-button"
+            data-buttoncolor="inverse"
+            data-width="280px"
+            data-height="50px"
           >
-            Prendre rendez-vous
-          </a>
+            <a
+              href="https://www.gorendezvous.com/gennysantebeaute?companyId=134391"
+              target="GOrendezvous"
+              className="text-primary"
+            >
+              Prendre un rendez-vous
+            </a>
+          </div>
         </button>
       </div>
       <div className="hidden md:flex absolute bottom-0 left-[-140px] opacity-50 w-[512px]">

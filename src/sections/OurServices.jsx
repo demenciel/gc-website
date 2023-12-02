@@ -68,7 +68,7 @@ const CarouselCard = ({ title, imageUrl, video }) => {
 
   return (
     <>
-      <div className="w-1/2 md:w-3/4 group flex cursor-pointer flex-col items-center justify-center bg-background p-4 shadow-md rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl tilt">
+      <div className="w-2/3-screen md:w-3/4 group flex cursor-pointer flex-col items-center justify-center bg-background p-4 shadow-md rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl tilt">
         <img
           src={imageUrl}
           alt={title}
@@ -98,7 +98,7 @@ const OurServices = () => {
   const visibleCards = carouselData;
 
   return (
-    <div id="reviews" className="w-full bg-primary relative">
+    <div id="ourservices" className="w-full bg-primary relative">
       <div className="pb-16 pt-10">
         <div className="w-full h-1/4 pb-8">
           <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl py-8 text-background">

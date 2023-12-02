@@ -1,14 +1,15 @@
 import { EmailRounded } from "@mui/icons-material";
 import { IconButton, InputBase, Paper } from "@mui/material";
 import frame from "../assets/Frame.png";
+import flower from "../assets/flower.png";
 import React from "react";
 
 const SubscribeEmail = () => {
   return (
     <div className="w-full bg-background px-4 md:px-32 py-32 flex justify-center items-center ">
       <div className="bg-primary w-3/4 h-3/4 rounded py-12 px-6 md:px-32 relative">
-        <div className="absolute top-[-50px]">
-          <img src={frame} alt="" className="object-cover" />
+        <div className="absolute top-[-60px] xs:top-[-100px] md:top-[-110px] left-10 ">
+          <img src={flower} alt="" className="object-cover w-full md:w-3/4" />
         </div>
         <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl py-8 text-background">
           Restez à la pointe de la beauté et du bien-être !
@@ -37,7 +38,7 @@ const SubscribeEmail = () => {
               inputProps={{ "aria-label": "search google maps" }}
             />
             <IconButton
-              sx={{ p: "10px", color: "#ECD8BD" }}
+              sx={{ p: "10px", color: "#f6e5e5" }}
               aria-label="directions"
             >
               <EmailRounded />

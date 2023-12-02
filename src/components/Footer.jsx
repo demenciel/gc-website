@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div
       id="footer"
-      className="w-full h-1/4-screen flex flex-col justify-center items-center border-t-2 "
+      className="w-full flex flex-col justify-center items-center border-t-2 py-8"
     >
       <div className="w-[128px] h-[128px]">
         <img src={logo} alt="" className="object-cover" />
@@ -21,19 +21,24 @@ const Footer = () => {
           href="https://www.facebook.com/profile.php?id=100064845977672"
           className="icon-link"
         >
-          <FacebookOutlined fontSize="large" className="icon-image" />
+          <FacebookOutlined
+            fontSize="large"
+            className="icon-image text-primary"
+          />
         </a>
         <a
           href="https://www.instagram.com/genny.sante.beaute/"
           className="icon-link"
         >
-          <Instagram fontSize="large" />
+          <Instagram fontSize="large" className="icon-image text-primary" />
         </a>
         <a href="mailto:gennysantebeaute@gmail.com" className="icon-link">
-          <EmailOutlined fontSize="large" />
+          <EmailOutlined fontSize="large" className="icon-image text-primary" />
         </a>
       </div>
-      <p></p>
+      <p className="mt-2">
+        <span className="text-primary">Propulsé par Alexandre Couture  © 2023 </span>
+      </p>
     </div>
   );
 };

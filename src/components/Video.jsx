@@ -11,7 +11,7 @@ const VideoModal = ({ open, setOpenModal, video }) => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "70%",
+    width: window.innerWidth >= 800 ? "70%" : "100vw",
   };
 
   return (
@@ -21,7 +21,7 @@ const VideoModal = ({ open, setOpenModal, video }) => {
       aria-labelledby="video-modal-title"
       aria-describedby="video-modal-description"
     >
-      <Box sx={style}>
+      <Box sx={style} className="w-100">
         <button className="absolute right-5 top-5" onClick={closeModal}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
