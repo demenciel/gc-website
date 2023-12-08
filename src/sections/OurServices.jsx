@@ -68,7 +68,7 @@ const CarouselCard = ({ title, imageUrl, video }) => {
 
   return (
     <>
-      <div className="w-2/3-screen md:w-3/4 group flex cursor-pointer flex-col items-center justify-center bg-background p-4 shadow-md rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl tilt">
+      <div className="w-[300px] md:w-3/4 group flex cursor-pointer flex-col items-center justify-center bg-background p-4 shadow-md rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl tilt">
         <img
           src={imageUrl}
           alt={title}
@@ -115,7 +115,6 @@ const OurServices = () => {
             speed={500} // Transition speed
             autoHeight={true} // Adjust height to the active slide
             navigation
-            pagination={{ clickable: true }}
             breakpoints={{
               768: {
                 slidesPerView: 2,

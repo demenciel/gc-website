@@ -28,7 +28,7 @@ const carouselData = [
 
 const CarouselCard = ({ review, imageUrl, customer }) => {
   return (
-    <div className="group flex cursor-pointer w-[260px] h-[300px] flex-col items-center justify-evenly bg-background p-4 shadow-md rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl tilt">
+    <div className="group flex cursor-pointer w-[260px] h-[300px] flex-col items-center justify-evenly bg-background p-4 shadow-md rounded-lg transition duration-300 ease-in-out transform hover:shadow-2xl tilt">
       <div className="flex justify-start">
         <img
           src={imageUrl}
@@ -47,7 +47,7 @@ const Reviews = () => {
   const pageId = "100064845977672";
   const accessToken = import.meta.env.VITE_FACEBOOK_TOKEN;
 
-  const url = `https://graph.facebook.com/v10.0/${pageId}/ratings?access_token=${accessToken}`;
+  /* const url = `https://graph.facebook.com/v10.0/${pageId}/ratings?access_token=${accessToken}`;
   useEffect(() => {
     const fetchRatings = async () => {
       try {
@@ -60,7 +60,7 @@ const Reviews = () => {
     };
 
     fetchRatings();
-  }, []);
+  }, []); */
 
   return (
     <div id="reviews" className="w-full h-3/4-screen bg-primary relative">
