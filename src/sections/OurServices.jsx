@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css"; // basic Swiper styles
-import "swiper/css/navigation"; // if you are using navigation module
 import "swiper/css/pagination";
 
 // photos
@@ -10,7 +9,7 @@ import microblading from "../assets/Photos site genny/Microblading /20231126_112
 import freckles from "../assets/Photos site genny/Freckles/2e70c3bd-847c-4a03-b258-1fb52af2202d.png";
 import eyeliner from "../assets/Photos site genny/Eyeliner-intralash/8b154c47-db7c-4fa1-89aa-26fde0c696b1.png";
 import lipblush from "../assets/Photos site genny/Lipblush /received_879035597100290.jpeg";
-import ombrebrow from "../assets/Photos site genny/Ombrebrow-nanobrow/received_688841509775996.jpeg";
+import ombrebrow from "../assets/Photos site genny/Ombrebrow-nanobrow/400235384_1087187132437627_5368917197133462338_n (1).jpg";
 import micropigmentation from "../assets/Photos site genny/Micropigmentation capillaire /received_2082407108783656.jpeg";
 //videos
 import microbladingombrebrowvideo from "../assets/Photos site genny/video/microblading-ombrebrow.mp4";
@@ -93,10 +92,6 @@ const CarouselCard = ({ title, imageUrl, video }) => {
 };
 
 const OurServices = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const visibleCards = carouselData;
-
   return (
     <div id="ourservices" className="w-full bg-primary relative">
       <div className="pb-16 pt-10">
@@ -114,7 +109,11 @@ const OurServices = () => {
             loop={true} // Enable looping
             speed={500} // Transition speed
             autoHeight={true} // Adjust height to the active slide
-            navigation
+            navigation={{
+              nextEl: ".image-swiper-button-next",
+              prevEl: ".image-swiper-button-prev",
+              disabledClass: "swiper-button-disabled",
+            }}
             breakpoints={{
               768: {
                 slidesPerView: 2,

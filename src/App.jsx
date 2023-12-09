@@ -15,7 +15,7 @@ function App() {
     <>
       <Navbar />
       <Sidebar />
-      <div className="min-w-320 min-h-screen z-0 flex flex-col">
+      <div className="min-w-320 min-h-screen -translate-y-[-128px] md:-translate-y-0 z-0 flex flex-col">
         <Header />
         <SpecialityBanner />
         <OurServices />

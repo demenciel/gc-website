@@ -8,7 +8,7 @@ const SpecialityBanner = () => {
   return (
     <div
       id="specialitybanner"
-      className="relative w-full px-8 md:px-16 h-3/4-screen relative flex flex-col flex-grow md:flex-row lg:flex-row overflow-clip justify-evenly items-center"
+      className="relative w-full px-8 my-8 md:px-16 h-full-screen md:h-3/4-screen relative flex flex-grow flex-col md:flex-row lg:flex-row overflow-clip justify-evenly items-center"
     >
       <div className=" absolute bottom-top right-0 opacity-50 md:w-[512px] w-[256px] object-scale-down">
         <svg
@@ -54,21 +54,22 @@ const SpecialityBanner = () => {
         </svg>
       </div>
 
-      <div className="md:w-3/4 lg:w-3/4 relative hidden md:flex p-32">
+      <div className="md:w-3/4 md:flex md:p-32">
         <img src={image2} className="object-cover" />
       </div>
       <img
         src={group}
         className="rotate-[75deg] object-scale-down hidden md:block absolute right-[-50px] z-0 bottom-[-70px] md:w-1/4 w-1/2"
       />
-      <div className="pt-32 md:pt-0 w-full md:w-1/2 text-center md:text-left flex flex-col justify-center md:pl-10 space-y-4 z-10">
-        <h1 className="text-4xl font-bold text-primary mb-4">
+      <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center md:pl-10 space-y-4 z-10">
+        <h1 className="text-2xl md:text-4xl font-bold text-cta mb-4">
           Services de qualités
         </h1>
-        <p className="text-white pb-4">
-          Découvrez un univers de détente et de beauté. Nos traitements
-          personnalisés sont conçus pour revitaliser votre corps et esprit.
-          L'expertise rencontre le bien-être chez Genny Santé & Beauté.
+        <p className="text-white pb-4 text-md">
+          Explorez un monde de beauté et de raffinement chez Genny Santé &
+          Beauté. Notre salon d'esthétique est dédié à sublimer votre apparence
+          et à mettre en valeur votre bien-être. Nos services personnalisés sont
+          conçus pour vous offrir une expérience de beauté exceptionnelle.
         </p>
         <button className="px-8 py-2 w-1/2 self-center md:self-start w-full lg:w-1/2">
           <div

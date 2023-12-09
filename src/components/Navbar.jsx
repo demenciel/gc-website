@@ -58,13 +58,13 @@ const Navbar = () => {
           style={{ width: "200px" }}
           className="bg-background flex flex-col items-center justify-center h-full space-y-8 text-primary"
         >
-          <a href="#header">Accueil</a>
-          <a href="#ourservices">Services</a>
-          <a href="#aboutme">À propos</a>
+          <a href="#header" className="text-primary">Accueil</a>
+          <a href="#ourservices" className="text-primary">Services</a>
+          <a href="#aboutme" className="text-primary">À propos</a>
           <button className="px-8 py-2">
             <a
               href="https://www.facebook.com/profile.php?id=100064845977672&sk=services"
-              className="text-primary"
+              className="text-cta"
             >
               Prendre rendez-vous
             </a>

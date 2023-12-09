@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div
       id="header"
-      className="header flex flex-col items-center overflow-hidden -translate-y-[-128px]  md:-translate-y-0  "
+      className="header flex flex-col items-center overflow-hidden relative md:-translate-y-0  "
     >
       <div className="flex flex-col flex-grow md:flex-row lg:flex-row ">
         <div className="p-8 md:w-1/2 lg:w-1/2 flex flex-grow relative justify-center items-center">
