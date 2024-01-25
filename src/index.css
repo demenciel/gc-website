@@ -80,27 +80,3 @@ button:focus-visible {
   filter: brightness(0) invert(1); /* This filter turns the image white */
 }
 
-.image-swiper-button-next,
-.image-swiper-button-prev {
-  position: relative;
-  top: 50%;
-  z-index: 10;
-  color: #242424;
-}
-.image-swiper-button-next {
-  right: 0px; /* Adjust as needed */
-}
-
-.image-swiper-button-prev {
-  left: 0px; /* Adjust as needed */
-}
-
-/* Adjust pagination position */
-.swiper-pagination {
-  position: absolute;
-  bottom: -100px;
-  left: 0;
-  width: 10%;
-  color: #242424
-}
-
