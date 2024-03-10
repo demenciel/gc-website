@@ -1,7 +1,7 @@
 import React from "react";
 
 import gennydiploma from "../assets/Photos site genny/Freckles/13ea3412-a07b-44e4-aeff-7303b3e2cff5.png";
-import genny from "../assets/Photos site genny/Freckles/40e94a79-b225-4423-bd11-769b126dba99.png";
+import genny from "../assets/Photos site genny/Freckles/20231119_132633.jpg";
 import acc from "../assets/Group(1).png";
 
 const AboutMe = () => {

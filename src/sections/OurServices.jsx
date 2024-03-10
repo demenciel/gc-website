@@ -9,7 +9,7 @@ import "../../public/styles.css";
 // photos
 import microblading from "../assets/Photos site genny/Microblading /20231126_112108.png";
 import freckles from "../assets/Photos site genny/Freckles/2e70c3bd-847c-4a03-b258-1fb52af2202d.png";
-import eyeliner from "../assets/Photos site genny/Eyeliner-intralash/8b154c47-db7c-4fa1-89aa-26fde0c696b1.png";
+import eyeliner from "../assets/Photos site genny/Eyeliner-intralash/new.jpg";
 import lipblush from "../assets/Photos site genny/Lipblush /received_879035597100290.jpeg";
 import ombrebrow from "../assets/Photos site genny/Ombrebrow-nanobrow/400235384_1087187132437627_5368917197133462338_n (1).jpg";
 import micropigmentation from "../assets/Photos site genny/Micropigmentation capillaire /received_2082407108783656.jpeg";
