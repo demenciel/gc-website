@@ -1,14 +1,13 @@
 import React from "react";
 
-import vector from "../assets/Création sans titre(3).png";
-import group from "../assets/Group.png";
-import image2 from "../assets/Photos site genny/47b8b599-fb76-45d4-8c30-f0a1cd49b04b.png";
+import group from "../assets/speciality-banner-bars.webp";
+import image2 from "../assets/Photos site genny/speciality-banner-genny.png";
 
 const SpecialityBanner = () => {
   return (
     <div
       id="specialitybanner"
-      className="relative w-full px-8 my-8 md:px-16 h-full-screen md:h-3/4-screen relative flex flex-grow flex-col md:flex-row lg:flex-row overflow-clip justify-evenly items-center"
+      className="w-full px-8 my-8 md:px-16 h-full-screen md:h-3/4-screen relative flex flex-grow flex-col md:flex-row lg:flex-row overflow-clip justify-evenly items-center"
     >
       <div className=" absolute bottom-top right-0 opacity-50 md:w-[512px] w-[256px] object-scale-down">
         <svg

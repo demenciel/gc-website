@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 import { Drawer } from "@mui/material";
 import { Menu } from "@mui/icons-material";
-import logo from "../assets/Photos site genny/logo-transparent-primary.png";
 
-const Navbar = () => {
+
+const Navbar = ({ logo }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="absolute md:relative flex h-[128px] text-lg flex-grow items-center justify-between w-full py-6 p-section-padding lg:p-section-padding-xl z-20">
-      <div className="">
-        <img src={logo} alt="logo" className="h-24" />{" "}
+    <div className="relative flex h-[128px] text-lg items-center justify-between w-full py-6 p-section-padding lg:p-section-padding-xl z-20">
+
+      <div className="flex-shrink-0">
+        <img src={logo} alt="logo" className="h-24" />
       </div>
       <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <Menu color="#ECD8BD" />
       </button>
-      <div className="flex text-primary space-x-4 hidden md:flex ">
+      <div className="hidden md:flex text-primary space-x-4 flex-grow justify-center">
         <a href="#header" className="text-primary">
           Accueil
         </a>
@@ -25,15 +26,15 @@ const Navbar = () => {
           À propos
         </a>
       </div>
-      <div className="flex space-x-4 hidden md:flex">
-        <button className="px-8 py-2">
+      <div className="hidden md:block">
+        <button className="px-4 py-2">
           <div
             data-professionalpagename="gennysantebeaute"
             data-bookingwidgeturlparams="companyId=134391"
             data-language="fr"
             data-label="Prendre un rendez-vous"
             data-url="https://www.gorendezvous.com/"
-            class="gorendezvous-button"
+            className="gorendezvous-button"
             data-buttoncolor="inverse"
             data-width="280px"
             data-height="50px"
@@ -56,7 +57,7 @@ const Navbar = () => {
       >
         <div
           style={{ width: "200px" }}
-          className="bg-background flex flex-col items-center justify-center h-full space-y-8 text-primary"
+          className="bg-background flex flex-col items-center py-12 h-full space-y-8 text-primary"
         >
           <a href="#header" className="text-primary">
             Accueil

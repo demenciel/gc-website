@@ -1,12 +1,9 @@
 import React from "react";
-import lady from "../assets/beautiful-woman-white-dress-white-background-portrait-with-beautiful-long-hair-touching-face 1.png";
-import ellipse from "../assets/Ellipse 11.png";
-import ctaImage from "../assets/Photos site genny/Microblading /received_3770256186538508.jpeg";
-
 import DiamondOutlinedIcon from "@mui/icons-material/DiamondOutlined";
 import WorkspacePremiumOutlinedIcon from "@mui/icons-material/WorkspacePremiumOutlined";
 import ThumbUpOffAltOutlinedIcon from "@mui/icons-material/ThumbUpOffAltOutlined";
-const Header = () => {
+
+const Header = ({ lady, ellipse }) => {
   return (
     <div
       id="header"

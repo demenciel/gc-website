@@ -19,3 +19,54 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #333;
+  border-top: 5px solid #ffd0d7;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffd0d7 !important;
+  background-color: rgba(36, 36, 36, 0.5);
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(36, 36, 36, 0.8);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px !important;
+}
+
+.swiper-pagination-bullet {
+  border-color: #ffd0d7 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #242424 !important;
+}

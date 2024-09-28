@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y, EffectFade } from "swiper/modules";
-import "swiper/css"; // basic Swiper styles
+import { Navigation, Pagination, A11y } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/effect-fade";
 
 import "../../public/styles.css";
 // photos
-import microblading from "../assets/Photos site genny/Microblading /20231126_112108.png";
-import freckles from "../assets/Photos site genny/Freckles/2e70c3bd-847c-4a03-b258-1fb52af2202d.png";
-import eyeliner from "../assets/Photos site genny/Eyeliner-intralash/new.jpg";
-import lipblush from "../assets/Photos site genny/Lipblush /received_879035597100290.jpeg";
-import ombrebrow from "../assets/Photos site genny/Ombrebrow-nanobrow/400235384_1087187132437627_5368917197133462338_n (1).jpg";
-import micropigmentation from "../assets/Photos site genny/Micropigmentation capillaire /received_2082407108783656.jpeg";
+import microblading from "../assets/Photos site genny/Microblading /microblading.png";
+import freckles from "../assets/Photos site genny/Freckles/freckles.webp";
+import eyeliner from "../assets/Photos site genny/Eyeliner-intralash/eyeliner.jpg";
+import lipblush from "../assets/Photos site genny/Lipblush /lipblush.webp";
+import ombrebrow from "../assets/Photos site genny/Ombrebrow-nanobrow/ombrebrow.jpg";
+import micropigmentation from "../assets/Photos site genny/Micropigmentation capillaire /micropigmentation-capillaire.jpeg";
 //videos
 import microbladingombrebrowvideo from "../assets/Photos site genny/video/microblading-ombrebrow.mp4";
 import micropigmentationvideo from "../assets/Photos site genny/video/micropigmentation.mp4";
@@ -20,7 +20,6 @@ import frecklesvideo from "../assets/Photos site genny/video/frecklesvideo.mp4";
 import lipblushvideo from "../assets/Photos site genny/video/lipblush.mp4";
 import eyelinerintralashvideo from "../assets/Photos site genny/video/eyeliner.mp4";
 import VideoModal from "../components/Video";
-import { Card } from "@mui/material";
 
 // Mock data for the carousel cards
 const carouselData = [
@@ -56,99 +55,80 @@ const carouselData = [
   },
 ];
 
-<style jsx>{`
-  .tilt:hover {
-    cursor: pointer;
-    transform: perspective(1000px) rotateY(10deg) scale(1.05);
-  }
-  .tilt:hover {
-    cursor: pointer;
-    transform: perspective(1000px) rotateY(10deg) scale(1.05);
-  }
-`}</style>;
-
 const CarouselCard = ({ title, imageUrl, video }) => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
-    <>
-      <Card
-        sx={{ maxWidth: 345, backgroundColor: "#242424" }}
-        className="cursor-pointer "
-      >
-        <div className="w-full group flex  flex-col items-center justify-center bg-background p-4 shadow-md rounded-lg transition duration-300 ease-in-out transform hover:shadow-2xl">
+    <div className="w-full h-full flex items-center justify-center">
+      <div className="w-full max-w-[300px] group flex flex-col items-center justify-center bg-background p-4 shadow-md rounded-lg transition duration-300 ease-in-out transform hover:shadow-2xl">
+        <div className="relative w-full h-[380px] overflow-hidden rounded-t-lg">
           <img
             src={imageUrl}
             alt={title}
-            className="w-[272px] h-[380px] object-cover rounded-t-lg"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-black to-transparent transition duration-300 ease-in-out group-hover:opacity-0"></div>
-          <h3 className="mt-4 text-lg font-bold py-2 absolute bottom-20 text-cta">
+          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70 transition duration-300 ease-in-out group-hover:opacity-0"></div>
+          <h3 className="absolute bottom-16 left-0 right-0 text-lg font-bold text-cta text-center">
             {title}
           </h3>
           <button
-            onClick={() => {
-              setOpenModal(true);
-            }}
-            className="mt-2 bg-cta text-background py-2 px-4 rounded-full absolute bottom-8 group-hover:drop-shadow-lg"
+            onClick={() => setOpenModal(true)}
+            className="absolute bottom-4 left-1/2 transform -translate-x-1/2 mt-2 bg-cta text-background py-2 px-4 text-sm rounded-full group-hover:drop-shadow-lg"
           >
             Recommandations
           </button>
         </div>
-        <VideoModal
-          open={openModal}
-          setOpenModal={setOpenModal}
-          video={video}
-        />
-      </Card>
-    </>
+      </div>
+      <VideoModal
+        open={openModal}
+        setOpenModal={setOpenModal}
+        video={video}
+      />
+    </div>
   );
 };
 
 const OurServices = () => {
   return (
-    <div id="ourservices" className="w-full bg-primary relative">
-      <div className="pb-16 pt-10 h-full">
-        <div className="w-full h-1/4 pb-8">
-          <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl py-8 text-background">
-            Nos services
-          </h1>
-        </div>
-        <div className="w-full sm:px-16 md:px-32">
+    <div id="ourservices" className="w-full bg-primary relative py-16">
+      <div className="container mx-auto px-4">
+        <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl mb-12 text-background">
+          Nos services
+        </h1>
+        <div className="relative">
           <Swiper
-            modules={[Navigation, Pagination, A11y, EffectFade]}
-            spaceBetween={40} // Add space between slides
+            modules={[Navigation, Pagination, A11y]}
+            spaceBetween={20}
             slidesPerView={1}
-            centeredSlides={true} // Center the active slide
-            loop={true} // Enable looping
-            speed={500} // Transition speed
-            autoHeight={true}
+            centeredSlides={true}
+            loop={true}
+            speed={500}
             navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
             }}
+            pagination={{ clickable: true }}
             breakpoints={{
-              768: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-              1500: {
-                slidesPerView: 5,
-                spaceBetween: 20,
-              },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+              1280: { slidesPerView: 4 },
             }}
-            effect={"effect-fade"}
-            freeMode={true} // Enable free mode
+            className="pb-12"
           >
             {carouselData.map((card, index) => (
-              <SwiperSlide key={index} className="flex justify-center">
+              <SwiperSlide key={index}>
                 <CarouselCard {...card} />
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className="swiper-button-prev !text-cta" onClick={() => {
+            const swiper = document.querySelector('.swiper');
+            swiper.swiper.slidePrev();
+          }}></div>
+          <div className="swiper-button-next !text-cta" onClick={() => {
+            const swiper = document.querySelector('.swiper');
+            swiper.swiper.slideNext();
+          }}></div>
         </div>
       </div>
     </div>

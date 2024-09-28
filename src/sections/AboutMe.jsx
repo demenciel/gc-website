@@ -1,8 +1,8 @@
 import React from "react";
 
-import gennydiploma from "../assets/Photos site genny/Freckles/13ea3412-a07b-44e4-aeff-7303b3e2cff5.png";
-import genny from "../assets/Photos site genny/Freckles/20231119_132633.jpg";
-import acc from "../assets/Group(1).png";
+import gennydiploma from "../assets/Photos site genny/Freckles/genny-diplome.webp";
+import genny from "../assets/Photos site genny/Freckles/genny-salon.webp";
+import acc from "../assets/dots.webp";
 
 const AboutMe = () => {
   return (
