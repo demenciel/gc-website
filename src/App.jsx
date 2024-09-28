@@ -26,11 +26,11 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); // Adjust this time as needed
-
-    return () => clearTimeout(timer);
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2000);
+    });
   }, []);
 
   return (
