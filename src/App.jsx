@@ -12,6 +12,7 @@ import { Footer, Navbar, Sidebar, PropulsedBanner } from "./components";
 import logo from "./assets/Photos site genny/logo-transparent-primary.png";
 import lady from "./assets/beautiful-woman.webp";
 import ellipse from "./assets/ellipse.webp";
+import OurSpecialities from './sections/OurSpecialities';
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -57,6 +58,14 @@ function App() {
               viewport={{ once: false, amount: 0.3 }}
             >
               <SpecialityBanner />
+            </motion.div>
+            <motion.div
+              variants={sectionVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.3 }}
+            >
+              <OurSpecialities />
             </motion.div>
             <motion.div
               variants={sectionVariants}

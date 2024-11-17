@@ -17,7 +17,7 @@ const Header = ({ lady, ellipse }) => {
             </h1>
             <br />
             <h3 className="text-lg md:text-2xl py-4 md:py-8 lg:pb-12 text-cta">
-              Spécialiste en micropigmentation & maquillage permanent
+              Spécialiste en remodelage corporel et Nanopigmentation
             </h3>
           </div>
         </div>
@@ -75,7 +75,7 @@ const Header = ({ lady, ellipse }) => {
         </div>
       </div>
       {/* banner */}
-      <div className="w-full h-[64px] sm:h-[128px] bg-primary text-[#000] flex items-center pl-16 absolute bottom-0">
+      <div className=" w-full h-[64px] sm:h-[128px] bg-primary text-[#000] flex items-center pl-16 absolute bottom-0">
         <div className=" hidden md:flex xl:space-x-20">
           <span className="w-[128px] text-background">
             <DiamondOutlinedIcon fontSize="large" />

@@ -70,7 +70,7 @@ const SpecialityBanner = () => {
           et à mettre en valeur votre bien-être. Nos services personnalisés sont
           conçus pour vous offrir une expérience de beauté exceptionnelle.
         </p>
-        <button className="px-8 py-2 w-1/2 self-center md:self-start w-full lg:w-1/2">
+        <button className="px-8 py-2 w-full self-center md:self-start lg:w-1/2">
           <div
             data-professionalpagename="gennysantebeaute"
             data-bookingwidgeturlparams="companyId=134391"
