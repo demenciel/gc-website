@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/Photos site genny/logo-transparent-primary.png";
+import logo from "../assets/nouveau-logo.png";
 import {
   EmailOutlined,
   LocationOn,

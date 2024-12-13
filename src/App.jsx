@@ -9,7 +9,7 @@ import {
   SpecialityBanner,
 } from "./sections";
 import { Footer, Navbar, Sidebar, PropulsedBanner } from "./components";
-import logo from "./assets/Photos site genny/logo-transparent-primary.png";
+import logo from "./assets/nouveau-logo.png";
 import lady from "./assets/beautiful-woman.webp";
 import ellipse from "./assets/ellipse.webp";
 import OurSpecialities from './sections/OurSpecialities';
