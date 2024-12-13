@@ -14,6 +14,7 @@ import lady from "./assets/beautiful-woman.webp";
 import ellipse from "./assets/ellipse.webp";
 import OurSpecialities from './sections/OurSpecialities';
 
+
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
