@@ -59,10 +59,10 @@ const AboutMe = () => {
           <img src={genny} alt="" className="object-cover" />
         </div>
         <div className="w-full md:w-1/2 px-8 py-8 md:py-0">
-          <h1 className=" pb-8 md:pb-16 font-bold text-xl md:text-5xl">
+          <h1 className=" pb-8 md:pb-16 font-bold text-xl md:text-5xl text-text">
             L'expertise rencontre le bien-être chez Genny Santé & Beauté.
           </h1>
-          <p className="text-justify">
+          <p className="text-justify text-text">
             Bienvenue chez Genny Santé & Beauté, votre destination privilégiée
             pour l'excellence en matière de maquillage permanent et
             micro-pigmentation. Fondée par Geneviève Couture, une passionnée de

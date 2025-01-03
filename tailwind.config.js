@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ffd0d7",
-        background: "#242424",
-        cta: "#f6e5e5",
-        text: "#fff",
+        primary: "#F0BB78",
+        background: "#FFF0DC",
+        cta: "#543A14",
+        text: "#131010",
       },
       height: {
         "1/2-screen": "50vh",

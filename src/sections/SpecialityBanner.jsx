@@ -7,7 +7,7 @@ const SpecialityBanner = () => {
   return (
     <div
       id="specialitybanner"
-      className="w-full px-8 my-8 md:px-16 h-full-screen md:h-3/4-screen relative flex flex-grow flex-col md:flex-row lg:flex-row overflow-clip justify-evenly items-center"
+      className="bg-background w-full px-8 my-8 md:px-16 h-full-screen md:h-3/4-screen relative flex flex-grow flex-col md:flex-row lg:flex-row overflow-clip justify-evenly items-center"
     >
       <div className=" absolute bottom-top right-0 opacity-50 md:w-[512px] w-[256px] object-scale-down">
         <svg
@@ -61,16 +61,17 @@ const SpecialityBanner = () => {
         className="rotate-[75deg] object-scale-down hidden md:block absolute right-[-50px] z-0 bottom-[-70px] md:w-1/4 w-1/2"
       />
       <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center md:pl-10 space-y-4 z-10">
-        <h1 className="text-2xl md:text-4xl font-bold text-cta mb-4">
+        <h1 className="text-2xl md:text-4xl font-bold text-text mb-4">
           Services de qualités
         </h1>
-        <p className="text-white pb-4 text-md">
-          Explorez un monde de beauté et de raffinement chez Genny Santé &
-          Beauté. Notre salon d'esthétique est dédié à sublimer votre apparence
-          et à mettre en valeur votre bien-être. Nos services personnalisés sont
-          conçus pour vous offrir une expérience de beauté exceptionnelle.
+        <p className="text-text pb-4 text-md">
+          Spécialisée en remodelage corporel, soins minceur sans chirurgie et maquillage semi-permanent, notre clinique allie expertise et technologies de pointe pour révéler votre beauté naturelle.
+
+          En collaboration avec la réputée Clinique Moderma Signature, nous proposons une approche globale et complémentaire, incluant des solutions anti-âge et esthétiques avancées, pour des résultats optimaux.
+
+          Sculptez votre silhouette, simplifiez votre routine beauté et découvrez des soins personnalisés adaptés à vos besoins.
         </p>
-        <button className="px-8 py-2 w-full self-center md:self-start lg:w-1/2">
+        <button className="px-8 py-2 w-full self-center md:self-start lg:w-1/2 bg-primary text-background">
           <div
             data-professionalpagename="gennysantebeaute"
             data-bookingwidgeturlparams="companyId=134391"
@@ -85,7 +86,7 @@ const SpecialityBanner = () => {
             <a
               href="https://www.gorendezvous.com/gennysantebeaute?companyId=134391"
               target="GOrendezvous"
-              className="text-primary"
+              className="text-background"
             >
               Prendre un rendez-vous
             </a>

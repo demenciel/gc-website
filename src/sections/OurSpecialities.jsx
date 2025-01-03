@@ -15,7 +15,7 @@ import soinminceursanschirurgie from "../assets/Photos site genny/Carousel-1/soi
 // Mock data for the carousel cards
 const carouselData = [
   {
-    title: "Cryolipolyse",
+    title: "Thermocryothérapie",
     imageUrl: cryo,
   },
   {
@@ -45,12 +45,12 @@ const CarouselCard = ({ title, imageUrl, video }) => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70 transition duration-300 ease-in-out group-hover:opacity-0"></div>
-          <h3 className="absolute bottom-24 left-0 right-0 text-lg font-bold text-cta text-center">
+          <h3 className="absolute bottom-24 left-0 right-0 text-lg font-bold text-primary text-center">
             {title}
           </h3>
           <button
             onClick={() => setOpenModal(true)}
-            className="absolute w-3/4 bottom-4 left-1/2 transform -translate-x-1/2 mt-2 bg-cta text-background py-2 px-4 text-sm rounded-full group-hover:drop-shadow-lg"
+            className="absolute w-3/4 bottom-4 left-1/2 transform -translate-x-1/2 mt-2 bg-primary text-background py-2 px-4 text-sm rounded-full group-hover:drop-shadow-lg"
           >
             <a
               href="https://www.gorendezvous.com/gennysantebeaute?companyId=134391"
@@ -70,7 +70,7 @@ const OurSpecialities = () => {
   return (
     <div id="ourservices" className="w-full bg-primary relative py-16">
       <div className="container mx-auto px-4">
-        <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl mb-12 text-background">
+        <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl mb-12 text-text">
           Nos spécialités
         </h1>
         <div className="relative">

@@ -70,3 +70,10 @@
 .swiper-pagination-bullet-active {
   background-color: #242424 !important;
 }
+
+@media (max-width: 768px) {
+  .mobile-swiper-button-prev,
+  .mobile-swiper-button-next {
+    display: none;
+  }
+}

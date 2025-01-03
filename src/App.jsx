@@ -9,8 +9,8 @@ import {
   SpecialityBanner,
 } from "./sections";
 import { Footer, Navbar, Sidebar, PropulsedBanner } from "./components";
-import logo from "./assets/nouveau-logo.png";
-import lady from "./assets/beautiful-woman.webp";
+import logo from "./assets/logo.png";
+import lady from "./assets/woman.png";
 import ellipse from "./assets/ellipse.webp";
 import OurSpecialities from './sections/OurSpecialities';
 
@@ -48,9 +48,9 @@ function App() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Navbar logo={logo} />
           <Sidebar />
           <div className="min-w-320 min-h-screen md:-translate-y-0 z-0 flex flex-col">
+            <Navbar logo={logo} />
             <Header lady={lady} ellipse={ellipse} />
             <motion.div
               variants={sectionVariants}
@@ -88,7 +88,7 @@ function App() {
             {/* <SubscribeEmail />  */}
             <Footer />
           </div>
-          <div className="sticky bottom-0 left-0 right-[calc(100%-2rem)]">
+          <div className="relative bottom-0 left-0 right-[calc(100%-2rem)]">
             <PropulsedBanner />
           </div>
         </motion.div>
