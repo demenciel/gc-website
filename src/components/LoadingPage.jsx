@@ -6,20 +6,21 @@ const LoadingPage = () => {
     return (
         <motion.div
             className="loading-container"
-            initial={{ opacity: 1, background: "linear-gradient(45deg, #ffd0d7 0%, #f6e5e5 99%, #f6e5e5 100%)" }}
+            initial={{ opacity: 1, background: "linear-gradient(45deg, #F0BB78 0%, #FFF0DC 99%, #FFF0DC 100%)" }}
             animate={{
                 opacity: 0,
                 background: [
-                    "linear-gradient(45deg, #ffd0d7 0%, #f6e5e5 99%, #f6e5e5 100%)",
-                    "linear-gradient(45deg, #242424 0%, #ffd0d7 100%)",
-                    "linear-gradient(45deg, #f6e5e5 0%, #ffd0d7 100%)",
-                    "linear-gradient(45deg, #ffd0d7 0%, #f6e5e5 99%, #f6e5e5 100%)",
+                    "linear-gradient(45deg, #F0BB78 0%, #FFF0DC 99%, #FFF0DC 100%)",
+                    "linear-gradient(45deg, #543A14 0%, #F0BB78 100%)",
+                    "linear-gradient(45deg, #FFF0DC 0%, #F0BB78 100%)",
+                    "linear-gradient(45deg, #F0BB78 0%, #FFF0DC 99%, #FFF0DC 100%)",
                 ],
             }}
             transition={{ duration: 5, ease: "easeInOut", repeat: Infinity }}
         >
             <motion.div
                 className="loading-spinner"
+                color='#F0BB78'
                 animate={{ rotate: 360 }}
                 transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
             />
