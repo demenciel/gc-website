@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import '../App.css';
 
+// #8d6b5b
+// #fff0dc
 const LoadingPage = () => {
     return (
         <motion.div
@@ -10,10 +12,10 @@ const LoadingPage = () => {
             animate={{
                 opacity: 0,
                 background: [
-                    "linear-gradient(45deg, #F0BB78 0%, #FFF0DC 99%, #FFF0DC 100%)",
-                    "linear-gradient(45deg, #543A14 0%, #F0BB78 100%)",
-                    "linear-gradient(45deg, #FFF0DC 0%, #F0BB78 100%)",
-                    "linear-gradient(45deg, #F0BB78 0%, #FFF0DC 99%, #FFF0DC 100%)",
+                    "linear-gradient(45deg, #8d6b5b 0%, #fff0dc 99%, #fff0dc 100%)",
+                    "linear-gradient(45deg, #8d6b5b 0%, #fff0dc 100%)",
+                    "linear-gradient(45deg, #fff0dc 0%, #8d6b5b 100%)",
+                    "linear-gradient(45deg, #8d6b5b 0%, #fff0dc 99%, #fff0dc 100%)",
                 ],
             }}
             transition={{ duration: 5, ease: "easeInOut", repeat: Infinity }}

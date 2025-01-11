@@ -14,18 +14,18 @@ const Sidebar = () => {
       <div id="sidebar-icons" className="h-1/2 flex flex-col justify-evenly">
         <a
           href="https://www.facebook.com/profile.php?id=100064845977672"
-          className="icon-link text-primary"
+          className="icon-link text-text"
         >
-          <FacebookOutlined fontSize="large" className="text-primary hover:text-text hover:cursor-pointer" />
+          <FacebookOutlined fontSize="large" className="text-text hover:text-text hover:cursor-pointer" />
         </a>
         <a
           href="https://www.instagram.com/genny.sante.beaute/"
           className="icon-link"
         >
-          <Instagram fontSize="large" className="text-primary hover:text-text hover:cursor-pointer" />
+          <Instagram fontSize="large" className="text-text hover:text-text hover:cursor-pointer" />
         </a>
         <a href="mailto:gennysantebeaute@gmail.com" className="icon-link">
-          <EmailOutlined fontSize="large" className="text-primary hover:text-text hover:cursor-pointer" />
+          <EmailOutlined fontSize="large" className="text-text hover:text-text hover:cursor-pointer" />
         </a>
       </div>
     </div>

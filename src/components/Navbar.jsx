@@ -26,7 +26,7 @@ const Navbar = ({ logo }) => {
         </a>
       </div>
       <div className="hidden md:block">
-        <button className="px-4 py-2 bg-primary hover:text-text hover:cursor-pointer">
+        <button className="px-4 py-2 bg-text hover:text-text hover:cursor-pointer">
           <div
             data-professionalpagename="gennysantebeaute"
             data-bookingwidgeturlparams="companyId=134391"

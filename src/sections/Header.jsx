@@ -13,11 +13,11 @@ const Header = ({ lady, ellipse }) => {
         {/* Text content */}
         <div className="flex flex-col justify-center items-start mx-auto md:mx-0 w-3/4 md:w-1/2 z-10 md:mt-[-64px] mt-[32px]">
           <div className="flex flex-col justify-center w-full">
-            <h1 className="text-3xl md:text-5xl text-primary">
+            <h1 className="text-3xl md:text-5xl text-title">
               Bienvenue dans votre Clinique de Médecine Esthétique
             </h1>
             <br />
-            <h3 className="text-lg md:text-2xl py-4 md:py-8 lg:pb-12 text-primary">
+            <h3 className="text-lg md:text-2xl py-4 md:py-8 lg:pb-12 text-text">
               Beauté, bien être et confiance en soi.
             </h3>
           </div>
@@ -33,7 +33,7 @@ const Header = ({ lady, ellipse }) => {
       </div>
 
       {/* Bottom banner */}
-      <div className=" w-full h-[64px] sm:h-[128px] bg-primary text-[#000] flex items-center pl-16 absolute bottom-0">
+      <div className=" w-full h-[64px] sm:h-[128px] bg-text text-[#000] flex items-center pl-16 absolute bottom-0">
         <div className="hidden md:flex xl:space-x-20">
           <span className="w-[128px] text-background">
             <DiamondOutlinedIcon fontSize="large" />

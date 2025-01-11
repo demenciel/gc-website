@@ -62,7 +62,7 @@ const AboutMe = () => {
           <h1 className=" pb-8 md:pb-16 font-bold text-xl md:text-5xl text-text">
             L'expertise rencontre le bien-être chez Genny Santé & Beauté.
           </h1>
-          <p className="text-justify text-text">
+          <p className="text-justify text-body">
             Bienvenue chez Genny Santé & Beauté, votre destination privilégiée
             pour l'excellence en matière de maquillage permanent et
             micro-pigmentation. Fondée par Geneviève Couture, une passionnée de

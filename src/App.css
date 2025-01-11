@@ -46,7 +46,7 @@
 .swiper-button-prev,
 .swiper-button-next {
   color: #ffd0d7 !important;
-  background-color: rgba(36, 36, 36, 0.5);
+  background-color: rgba(36, 36, 36, 0.2);
   width: 40px !important;
   height: 40px !important;
   border-radius: 50%;

@@ -61,7 +61,7 @@ const SpecialityBanner = () => {
         className="rotate-[75deg] object-scale-down hidden md:block absolute right-[-50px] z-0 bottom-[-70px] md:w-1/4 w-1/2"
       />
       <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center md:pl-10 space-y-4 z-10">
-        <h1 className="text-2xl md:text-4xl font-bold text-text mb-4">
+        <h1 className="text-2xl md:text-4xl font-bold text-title mb-4">
           Services de qualités
         </h1>
         <p className="text-text pb-4 text-md">
