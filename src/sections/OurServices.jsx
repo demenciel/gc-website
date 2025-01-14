@@ -101,8 +101,8 @@ const OurServices = () => {
             loop={true}
             speed={500}
             navigation={{
-              nextEl: '.swiper-button-next .mobile-swiper-button-next',
-              prevEl: '.swiper-button-prev .mobile-swiper-button-prev',
+              nextEl: '.services-swiper-button-next',
+              prevEl: '.services-swiper-button-prev',
             }}
             pagination={{ clickable: true }}
             breakpoints={{
@@ -118,14 +118,8 @@ const OurServices = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="swiper-button-prev !text-cta" onClick={() => {
-            const swiper = document.querySelector('.swiper');
-            swiper.swiper.slidePrev();
-          }}></div>
-          <div className="swiper-button-next !text-cta" onClick={() => {
-            const swiper = document.querySelector('.swiper');
-            swiper.swiper.slideNext();
-          }}></div>
+          <div className="services-swiper-button-prev swiper-button-prev !text-cta"></div>
+          <div className="services-swiper-button-next swiper-button-next !text-cta"></div>
         </div>
       </div>
       <h3 className="text-lg mt-4 text-title font-bold">

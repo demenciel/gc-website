@@ -70,7 +70,7 @@ const CarouselCard = ({ title, imageUrl, video }) => {
 
 const OurSpecialities = () => {
   return (
-    <div id="ourservices" className="w-full bg-background relative py-16">
+    <div id="ourspecialities" className="w-full bg-background relative py-16">
       <div className="container mx-auto px-4">
         <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl mb-12 text-text">
           Nos spécialités
@@ -84,8 +84,8 @@ const OurSpecialities = () => {
             loop={true}
             speed={500}
             navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+              nextEl: '.specialities-swiper-button-next',
+              prevEl: '.specialities-swiper-button-prev',
             }}
             pagination={{ clickable: true }}
             breakpoints={{
@@ -101,14 +101,8 @@ const OurSpecialities = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="swiper-button-prev !text-cta" onClick={() => {
-            const swiper = document.querySelector('.swiper');
-            swiper.swiper.slidePrev();
-          }}></div>
-          <div className="swiper-button-next !text-cta" onClick={() => {
-            const swiper = document.querySelector('.swiper');
-            swiper.swiper.slideNext();
-          }}></div>
+          <div className="specialities-swiper-button-prev swiper-button-prev !text-cta"></div>
+          <div className="specialities-swiper-button-next swiper-button-next !text-cta"></div>
         </div>
       </div>
       <h3 className="text-lg mt-4 text-title font-bold">
