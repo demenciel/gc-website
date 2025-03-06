@@ -37,69 +37,69 @@ function App() {
 
   return (
     <AnimatePresence mode="wait">
-      {isLoading ? (
+      {/* {isLoading ? (
         <LoadingPage key="loading" />
-      ) : (
-        <motion.div
-          key="app"
-          className="relative"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Sidebar />
-          <div className="min-w-320 min-h-screen flex flex-col">
-            <Navbar logo={logo} />
-            <motion.div
-              variants={sectionVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false, amount: 0.3 }}
-            >
-              <Header lady={lady} ellipse={ellipse} />
-            </motion.div>
-            <motion.div
-              variants={sectionVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false, amount: 0.3 }}
-            >
-              <SpecialityBanner />
-            </motion.div>
-            <motion.div
-              variants={sectionVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false, amount: 0.3 }}
-            >
-              <OurSpecialities />
-            </motion.div>
-            <motion.div
-              variants={sectionVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false, amount: 0.3 }}
-            >
-              <OurServices />
-            </motion.div>
-            <motion.div
-              variants={sectionVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false, amount: 0.3 }}
-            >
-              <AboutMe />
-            </motion.div>
-            {/* <Reviews /> */}
-            {/* <SubscribeEmail />  */}
-            <Footer />
-          </div>
-          <div className="relative bottom-0 left-0 right-[calc(100%-2rem)]">
-            <PropulsedBanner />
-          </div>
-        </motion.div>
-      )}
+      ) : ( */}
+      <motion.div
+        key="app"
+        className="relative"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Sidebar />
+        <div className="min-w-320 min-h-screen flex flex-col">
+          <Navbar logo={logo} />
+          <motion.div
+            variants={sectionVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.3 }}
+          >
+            <Header lady={lady} ellipse={ellipse} />
+          </motion.div>
+          <motion.div
+            variants={sectionVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.3 }}
+          >
+            <SpecialityBanner />
+          </motion.div>
+          <motion.div
+            variants={sectionVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.3 }}
+          >
+            <OurSpecialities />
+          </motion.div>
+          <motion.div
+            variants={sectionVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.3 }}
+          >
+            <OurServices />
+          </motion.div>
+          <motion.div
+            variants={sectionVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.3 }}
+          >
+            <AboutMe />
+          </motion.div>
+          {/* <Reviews /> */}
+          {/* <SubscribeEmail />  */}
+          <Footer />
+        </div>
+        <div className="relative bottom-0 left-0 right-[calc(100%-2rem)]">
+          <PropulsedBanner />
+        </div>
+      </motion.div>
+      {/*   )} */}
     </AnimatePresence>
   );
 }
