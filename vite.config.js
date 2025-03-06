@@ -37,5 +37,6 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
+  assetsInclude: ['**/*.PNG', '**/*.png', '**/*qualité*'],
 });
 

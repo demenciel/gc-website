@@ -31,7 +31,7 @@ function App() {
     window.addEventListener("load", () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 2000);
+      }, 0);
     });
   }, []);
 
@@ -49,9 +49,16 @@ function App() {
           transition={{ duration: 0.5 }}
         >
           <Sidebar />
-          <div className="min-w-320 min-h-screen md:-translate-y-0 z-0 flex flex-col">
+          <div className="min-w-320 min-h-screen flex flex-col">
             <Navbar logo={logo} />
-            <Header lady={lady} ellipse={ellipse} />
+            <motion.div
+              variants={sectionVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.3 }}
+            >
+              <Header lady={lady} ellipse={ellipse} />
+            </motion.div>
             <motion.div
               variants={sectionVariants}
               initial="hidden"

@@ -7,21 +7,21 @@ const Navbar = ({ logo }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-background relative flex h-[128px] text-lg items-center justify-between w-full py-6 p-section-padding lg:p-section-padding-xl z-20 border-b border-primary">
+    <div className="bg-transparent absolute flex h-[128px] text-lg items-center justify-between w-full py-6 p-section-padding lg:p-section-padding-xl z-20 border-b border-primary">
       <div className="flex-shrink-0">
         <img src={logo} alt="logo" className="h-24" />
       </div>
       <button className="md:hidden bg-primary text-background" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <Menu color="#ECD8BD" />
       </button>
-      <div className="hidden md:flex text-primary space-x-4 flex-grow justify-center hover:text-text hover:cursor-pointer">
-        <a href="#header" className="text-text hover:text-primary hover:cursor-pointer">
+      <div className="hidden md:flex text-primary space-x-32 flex-grow justify-center hover:text-text hover:cursor-pointer">
+        <a href="#header" className="text-text hover:text-primary hover:cursor-pointer text-lg font-bold tracking-wider">
           Accueil
         </a>
-        <a href="#ourservices" className="text-text hover:text-primary hover:cursor-pointer">
+<a href="#ourservices" className="text-text hover:text-primary hover:cursor-pointer text-lg font-bold tracking-wider">
           Services
         </a>
-        <a href="#aboutme" className="text-text hover:text-primary hover:cursor-pointer">
+        <a href="#aboutme" className="text-text hover:text-primary hover:cursor-pointer text-lg font-bold tracking-wider">
           À propos
         </a>
       </div>

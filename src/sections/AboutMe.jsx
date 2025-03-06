@@ -1,14 +1,14 @@
 import React from "react";
 
-import gennydiploma from "../assets/Photos site genny/Freckles/genny-diplome.webp";
-import genny from "../assets/Photos site genny/Freckles/genny-salon.webp";
+import gennydiploma from "../assets/photo de moi en bas .jpg";
+import genny from "../assets/photo en bas completement.jpg";
 import acc from "../assets/dots.webp";
 
 const AboutMe = () => {
   return (
     <div
       id="aboutme"
-      className="w-full py-8 md:py-32 flex flex-col flex-grow md:flex-row lg:flex-row overflow-hidden justify-evenly"
+      className="w-full h-full-screen py-8 md:py-32 flex flex-col flex-grow md:flex-row lg:flex-row overflow-hidden justify-evenly"
     >
       <div className="w-full h-full relative flex flex-col flex-grow md:flex-row lg:flex-row justify-evenly">
         <div className="hidden md:w-1/5 md:flex relative">
@@ -62,7 +62,7 @@ const AboutMe = () => {
           <h1 className=" pb-8 md:pb-16 font-bold text-xl md:text-5xl text-text">
             L'expertise rencontre le bien-être chez Genny Santé & Beauté.
           </h1>
-          <p className="text-justify text-body">
+          <p className="text-justify text-text">
             Bienvenue chez Genny Santé & Beauté, votre destination privilégiée
             pour l'excellence en matière de maquillage permanent et
             micro-pigmentation. Fondée par Geneviève Couture, une passionnée de

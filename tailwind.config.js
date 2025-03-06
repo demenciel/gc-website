@@ -2,13 +2,21 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      sans: ['Roboto', 'sans-serif'],
+      serif: ['Montserrat', 'serif'],
+    },
+    defaultFontFamily: {
+      sans: ['Roboto', 'sans-serif'],
+    },
     extend: {
       colors: {
-        primary: "#b48d7a",
-        background: "#FFF0DC",
-        cta: "#543A14",
-        text: "#8d6b5b",
-        title: "#6b4a3a",
+        primary: "#202020",
+        background: "#fff",
+        background2: "#efefef",
+        cta: "#202020",
+        text: "#202020",
+        title: "#202020",
         body: "#8d6b5b",
       },
       height: {

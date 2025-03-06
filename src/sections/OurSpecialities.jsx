@@ -7,10 +7,10 @@ import "swiper/css/pagination";
 
 import "../../public/styles.css";
 // photos
-import cryo from "../assets/Photos site genny/Carousel-1/cryolipolyse -B-FREEZE).png";
+import cryo from "../assets/photo thermocryothérapie.jpg";
 import lipocavitation from "../assets/Photos site genny/Carousel-1/Lipocavitation.png";
-import maderothérapie from "../assets/Photos site genny/Carousel-1/Maderothérapie.png";
-import soinminceursanschirurgie from "../assets/Photos site genny/Carousel-1/soin-minceur-sans-chirurgie.jpg";
+import maderothérapie from "../assets/photo maderotherapie.jpg";
+import soinminceursanschirurgie from "../assets/photo FORMATION maderothérapie.jpg";
 
 // Mock data for the carousel cards
 const carouselData = [
@@ -27,7 +27,7 @@ const carouselData = [
     imageUrl: maderothérapie,
   },
   {
-    title: "Soin minceur sans chirurgie",
+    title: "Formation Profesionnelle Maderothérapie",
     imageUrl: soinminceursanschirurgie,
   },
 ];
@@ -70,7 +70,7 @@ const CarouselCard = ({ title, imageUrl, video }) => {
 
 const OurSpecialities = () => {
   return (
-    <div id="ourspecialities" className="w-full bg-background relative py-16">
+    <div id="ourspecialities" className="w-full h-full-screen bg-background relative py-16">
       <div className="container mx-auto px-4">
         <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl mb-12 text-text">
           Nos spécialités

@@ -87,7 +87,7 @@ const CarouselCard = ({ title, imageUrl, video }) => {
 
 const OurServices = () => {
   return (
-    <div id="ourservices" className="w-full bg-background relative py-16">
+    <div id="ourservices" className="w-full h-full-screen bg-background2 relative py-16">
       <div className="container mx-auto px-4">
         <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl mb-12 text-text">
           Nos services
