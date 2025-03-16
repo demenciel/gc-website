@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 import "../../public/styles.css";
 // photos
-import cryo from "../assets/photo thermocryothérapie.jpg";
+import cryo from "../assets/thermocryotherapie-card.jpg";
 import lipocavitation from "../assets/Photos site genny/Carousel-1/Lipocavitation.png";
 import maderothérapie from "../assets/photo maderotherapie.jpg";
 import soinminceursanschirurgie from "../assets/photo FORMATION maderothérapie.jpg";

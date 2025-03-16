@@ -31,12 +31,6 @@
   height: calc(100vh - 128px);
 }
 
-a {
-  font-weight: 500;
-  color: #ECD8BD;
-  text-decoration: inherit;
-}
-
 body {
   margin: 0;
 }
@@ -83,5 +77,10 @@ button:focus-visible {
 
 .icon-link:hover .icon-image {
   filter: brightness(0) invert(1); /* This filter turns the image white */
+}
+
+/* Custom navigation hover effects */
+.group:hover span:last-child {
+  width: 100%;
 }
 

@@ -3,8 +3,8 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      sans: ['Roboto', 'sans-serif'],
-      serif: ['Montserrat', 'serif'],
+      sans: ['Roboto', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+      serif: ['Montserrat', 'ui-serif', 'Georgia', 'Cambria', 'serif'],
     },
     defaultFontFamily: {
       sans: ['Roboto', 'sans-serif'],

@@ -9,9 +9,7 @@ import {
   SpecialityBanner,
 } from "./sections";
 import { Footer, Navbar, Sidebar, PropulsedBanner } from "./components";
-import logo from "./assets/logo.png";
-import lady from "./assets/woman.png";
-import ellipse from "./assets/ellipse.webp";
+import logo from "./assets/Photos site genny/logo.png";
 import OurSpecialities from './sections/OurSpecialities';
 
 
@@ -57,7 +55,7 @@ function App() {
             whileInView="visible"
             viewport={{ once: false, amount: 0.3 }}
           >
-            <Header lady={lady} ellipse={ellipse} />
+            <Header />
           </motion.div>
           <motion.div
             variants={sectionVariants}

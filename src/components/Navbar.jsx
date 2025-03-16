@@ -7,22 +7,28 @@ const Navbar = ({ logo }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-transparent absolute flex h-[128px] text-lg items-center justify-between w-full py-6 p-section-padding lg:p-section-padding-xl z-20 border-b border-primary">
+    <div className="absolute flex h-[128px] text-lg items-center justify-between w-full py-6 px-12 z-20 border-b border-primary">
       <div className="flex-shrink-0">
-        <img src={logo} alt="logo" className="h-24" />
+        <img src={logo} alt="logo" className="w-48 object-cover object-center" />
       </div>
       <button className="md:hidden bg-primary text-background" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <Menu color="#ECD8BD" />
       </button>
-      <div className="hidden md:flex text-primary space-x-32 flex-grow justify-center hover:text-text hover:cursor-pointer">
-        <a href="#header" className="text-text hover:text-primary hover:cursor-pointer text-lg font-bold tracking-wider">
-          Accueil
+      <div className="hidden md:flex text-primary space-x-8 sm:space-x-16 md:space-x-16 lg:space-x-32  flex-grow justify-center">
+        <a href="#header" className="text-text hover:text-primary!important text-lg font-bold tracking-wider relative group
+                     transition-all duration-300 ease-in-out">
+          <span>Accueil</span>
+          <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
         </a>
-<a href="#ourservices" className="text-text hover:text-primary hover:cursor-pointer text-lg font-bold tracking-wider">
-          Services
+        <a href="#ourservices" className="text-text hover:text-primary!important text-lg font-bold tracking-wider relative group
+                     transition-all duration-300 ease-in-out">
+          <span>Services</span>
+          <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <a href="#aboutme" className="text-text hover:text-primary hover:cursor-pointer text-lg font-bold tracking-wider">
-          À propos
+        <a href="#aboutme" className="text-text hover:text-primary!important text-lg font-bold tracking-wider relative group
+                     transition-all duration-300 ease-in-out">
+          <span>À propos</span>
+          <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
         </a>
       </div>
       <div className="hidden md:block">
@@ -58,14 +64,17 @@ const Navbar = ({ logo }) => {
           style={{ width: "200px" }}
           className="bg-background flex flex-col items-center py-12 h-full space-y-8 text-primary"
         >
-          <a href="#header" className="text-primary">
-            Accueil
+          <a href="#header" className="text-primary relative group transition-all duration-300 ease-in-out">
+            <span>Accueil</span>
+            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-text transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="#ourservices" className="text-primary">
-            Services
+          <a href="#ourservices" className="text-primary relative group transition-all duration-300 ease-in-out">
+            <span>Services</span>
+            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-text transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="#aboutme" className="text-primary">
-            À propos
+          <a href="#aboutme" className="text-primary relative group transition-all duration-300 ease-in-out">
+            <span>À propos</span>
+            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-text transition-all duration-300 group-hover:w-full"></span>
           </a>
           <button className="px-8 py-2 bg-primary text-background">
             <div

@@ -1,24 +1,27 @@
 import React from "react";
-import DiamondOutlinedIcon from "@mui/icons-material/DiamondOutlined";
-import WorkspacePremiumOutlinedIcon from "@mui/icons-material/WorkspacePremiumOutlined";
-import ThumbUpOffAltOutlinedIcon from "@mui/icons-material/ThumbUpOffAltOutlined";
 import cryo from "../assets/photo thermocryothérapie.jpg";
 
-const Header = ({ lady, ellipse }) => {
+const Header = () => {
   return (
-    <div
-      id="header"
-      className="h-full-screen flex flex-col items-center overflow-hidden relative"
-    >
-      
+    <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+      {/* Background image: absolute to fill the container */}
+      <img
+        src={cryo}
+        alt="background"
+        className="absolute inset-0 w-full h-full object-cover object-center z-0"
+      />
 
-      <div className="absolute inset-0 z-0 h-full-screen">
-        <img
-          src={cryo}
-          alt="background"
-          className="w-full h-full object-cover object-center"
-        />
-                <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/20 to-transparent" style={{ height: '40%', top: 0 }}></div>
+      {/* Diagonal gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-transparent z-0" />
+
+      {/* Text block with a "frosted glass" look using backdrop-blur */}
+      <div className="z-10 max-w-2xl absolute top-1/2 left-[5%] transform -translate-y-1/2 p-6 sm:p-8 text-left">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-white drop-shadow-md">
+          Habitez le corps qui vous correspond
+        </h1>
+        <p className="mt-4 text-lg text-white/80">
+          Des soins spécialisés pour sculpter et améliorer votre silhouette.
+        </p>
       </div>
     </div>
   );
