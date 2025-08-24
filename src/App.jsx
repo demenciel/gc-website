@@ -9,10 +9,11 @@ import {
   SpecialityBanner,
 } from "./sections";
 import { Footer, Navbar, Sidebar, PropulsedBanner } from "./components";
-import logo from "./assets/Photos site genny/logo.png";
+import logo from "./assets/logonavbar.png";
 import OurSpecialities from './sections/OurSpecialities';
-
-
+import Welcome from './pages/Welcome';
+import imageLeft from './assets/blanc_logo.png';
+import imageRight from './assets/noir_logoo.png';
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -23,82 +24,86 @@ const sectionVariants = {
 };
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    window.addEventListener("load", () => {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 0);
-    });
-  }, []);
+  const [isQuebec, setIsQuebec] = useState(true);
+  const [isWelcome, setIsWelcome] = useState(true);
 
   return (
-    <AnimatePresence mode="wait">
-      {/* {isLoading ? (
-        <LoadingPage key="loading" />
-      ) : ( */}
-      <motion.div
-        key="app"
-        className="relative"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <Sidebar />
-        <div className="min-w-320 min-h-screen flex flex-col">
-          <Navbar logo={logo} />
-          <motion.div
-            variants={sectionVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
-          >
-            <Header />
-          </motion.div>
-          <motion.div
-            variants={sectionVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
-          >
-            <SpecialityBanner />
-          </motion.div>
-          <motion.div
-            variants={sectionVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
-          >
-            <OurSpecialities />
-          </motion.div>
-          <motion.div
-            variants={sectionVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
-          >
-            <OurServices />
-          </motion.div>
-          <motion.div
-            variants={sectionVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
-          >
-            <AboutMe />
-          </motion.div>
-          {/* <Reviews /> */}
-          {/* <SubscribeEmail />  */}
-          <Footer />
-        </div>
-        <div className="relative bottom-0 left-0 right-[calc(100%-2rem)]">
-          <PropulsedBanner />
-        </div>
-      </motion.div>
-      {/*   )} */}
-    </AnimatePresence>
+    <>
+      {isWelcome ? (
+        <>
+          <Welcome imageLeft={imageLeft} imageRight={imageRight} isQuebec={isQuebec} setIsQuebec={setIsQuebec} setIsWelcome={setIsWelcome} />
+        </>
+      ) : (
+        <>
+          <AnimatePresence mode="wait">
+            {/* {isLoading ? (
+          <LoadingPage key="loading" />
+        ) : ( */}
+            <motion.div
+              key="app"
+              className="relative"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Sidebar isQuebec={isQuebec} />
+              <div className="min-w-320 min-h-screen flex flex-col snap-y snap-mandatory overflow-y-scroll">
+                <Navbar logo={logo} />
+                <motion.div
+                  variants={sectionVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="snap-start h-screen"
+                >
+                  <Header />
+                </motion.div>
+                <motion.div
+                  variants={sectionVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="snap-start h-screen"
+                >
+                  <SpecialityBanner />
+                </motion.div>
+                <motion.div
+                  variants={sectionVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="snap-start h-screen"
+                >
+                  <OurSpecialities />
+                </motion.div>
+                {/* <motion.div
+                  variants={sectionVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false, amount: 0.3 }}
+                >
+                  <OurServices />
+                </motion.div> */}
+                <motion.div
+                  variants={sectionVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="snap-start h-screen"
+                >
+                  <AboutMe />
+                </motion.div>
+                {/* <Reviews /> */}
+                {/* <SubscribeEmail />  */}
+                <Footer isQuebec={isQuebec} />
+              </div>
+            </motion.div>
+            {/*   )} */}
+          </AnimatePresence>
+        </>
+      )}
+    </>
   );
 }
 

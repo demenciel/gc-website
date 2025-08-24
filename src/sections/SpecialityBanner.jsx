@@ -7,7 +7,7 @@ const SpecialityBanner = () => {
   return (
     <div
       id="specialitybanner"
-      className="bg-background2 w-full px-8 mb-8 md:px-16 h-full-screen md:h-full-screen relative flex flex-grow flex-col md:flex-row lg:flex-row overflow-clip justify-evenly items-center"
+      className="bg-background2 w-full px-8 mb-8 md:px-16 h-full-screen relative flex flex-grow flex-col md:flex-row md:flex-row overflow-clip justify-evenly items-center"
     >
       <div className=" absolute bottom-top right-0 opacity-50 md:w-[512px] w-[256px] object-scale-down">
         <svg
@@ -53,7 +53,7 @@ const SpecialityBanner = () => {
         </svg>
       </div>
 
-      <div className="md:w-3/4 md:flex md:p-32">
+      <div className="sm:w-3/4 sm:flex sm:p-32">
         <img src={image2} className="object-cover" />
       </div>
       <img
@@ -65,11 +65,12 @@ const SpecialityBanner = () => {
           Services de qualités
         </h1>
         <p className="text-text pb-4 text-md">
-          Spécialisée en remodelage corporel, soins minceur sans chirurgie et maquillage semi-permanent, notre clinique allie expertise et technologies de pointe pour révéler votre beauté naturelle.
+          Spécialisées en remodelage corporel, nos cliniques vous offrent un éventail de soins ainsi que des formations professionnelles de qualité.
+          Notre approche globale et bienveillante place votre bien-être au cœur de chaque étape, afin de vous guider vers une transformation durable et complète.
 
-          En collaboration avec la réputée Clinique Moderma Signature, nous proposons une approche globale et complémentaire, incluant des solutions anti-âge et esthétiques avancées, pour des résultats optimaux.
+          Grâce à l’alliance des technologies avancées, de la naturopathie et de notre expertise en coaching, nous vous accompagnons de A à Z dans la réalisation de vos objectifs.
 
-          Sculptez votre silhouette, simplifiez votre routine beauté et découvrez des soins personnalisés adaptés à vos besoins.
+          En partenariat avec la Clinique Moderma Signature à Québec et la Clinique Mademoiselle à Chicoutimi, nous mettons également à votre disposition une gamme élargie de services réunis sous un même toit, pour répondre à tous vos besoins.
         </p>
         <button className="px-8 py-2 w-full self-center md:self-start lg:w-1/2 bg-primary text-background">
           <div

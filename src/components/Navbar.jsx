@@ -15,17 +15,17 @@ const Navbar = ({ logo }) => {
         <Menu color="#ECD8BD" />
       </button>
       <div className="hidden md:flex text-primary space-x-8 sm:space-x-16 md:space-x-16 lg:space-x-32  flex-grow justify-center">
-        <a href="#header" className="text-text hover:text-primary!important text-lg font-bold tracking-wider relative group
+        <a href="#header" className="text-white hover:text-primary!important text-lg font-bold tracking-wider relative group
                      transition-all duration-300 ease-in-out">
           <span>Accueil</span>
           <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <a href="#ourservices" className="text-text hover:text-primary!important text-lg font-bold tracking-wider relative group
+        <a href="#ourspecialities" className="text-white hover:text-primary!important text-lg font-bold tracking-wider relative group
                      transition-all duration-300 ease-in-out">
           <span>Services</span>
           <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <a href="#aboutme" className="text-text hover:text-primary!important text-lg font-bold tracking-wider relative group
+        <a href="#aboutme" className="text-white hover:text-primary!important text-lg font-bold tracking-wider relative group
                      transition-all duration-300 ease-in-out">
           <span>À propos</span>
           <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>

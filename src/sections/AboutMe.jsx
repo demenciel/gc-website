@@ -63,26 +63,7 @@ const AboutMe = () => {
             L'expertise rencontre le bien-être chez Genny Santé & Beauté.
           </h1>
           <p className="text-justify text-text">
-            Bienvenue chez Genny Santé & Beauté, votre destination privilégiée
-            pour l'excellence en matière de maquillage permanent et
-            micro-pigmentation. Fondée par Geneviève Couture, une passionnée de
-            la santé et de la beauté, notre centre est dédié à rehausser la
-            beauté naturelle de chaque client avec une touche personnelle et
-            professionnelle. Chez Genny Santé & Beauté, nous croyons en la
-            beauté qui reflète votre essence intérieure. Nos services, allant du
-            maquillage permanent à des soins innovants comme la
-            micro-pigmentation capillaire, sont conçus pour sublimer votre
-            beauté naturelle tout en respectant votre unicité. Notre équipe
-            d'experts, formée aux dernières techniques et tendances, s'engage à
-            vous offrir une expérience inoubliable. Nous utilisons des produits
-            de haute qualité, choisis pour leur efficacité et leur douceur,
-            garantissant des résultats à la hauteur de vos attentes. La
-            confiance de nos clients est au cœur de notre mission. C'est
-            pourquoi nous accordons une importance particulière aux conseils et
-            à l'écoute, pour des prestations entièrement adaptées à vos besoins
-            et à vos envies. Rejoignez-nous chez Genny Santé & Beauté pour un
-            parcours de beauté et de bien-être qui transformera non seulement
-            votre apparence mais aussi votre sentiment de bien-être intérieur.
+            Bienvenue chez Genny Santé & Beauté, votre destination privilégiée pour l'excellence en remodelage corporel, formations professionnelles et accompagnement holistique. Nos services sont destinés à vous accompagner vers un bien-être et une liberté, tout en respectant votre unicité et vos objectifs ! Notre équipe d'experts, formée aux dernières technologies et tendances, s'engage à vous offrir une expérience inoubliable. La confiance de notre précieuse clientèle est au coeurs de notre mission. Essayer c'est l'adopter, être bien dans sa peau n'est pas un luxe!
           </p>
         </div>
         <div className="w-full md:w-1/5 md:flex relative">

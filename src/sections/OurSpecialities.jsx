@@ -10,7 +10,8 @@ import "../../public/styles.css";
 import cryo from "../assets/thermocryotherapie-card.jpg";
 import lipocavitation from "../assets/Photos site genny/Carousel-1/Lipocavitation.png";
 import maderothérapie from "../assets/photo maderotherapie.jpg";
-import soinminceursanschirurgie from "../assets/photo FORMATION maderothérapie.jpg";
+import formationpro from "../assets/formationpro.webp";
+import atelierholistiques from "../assets/atelierholistiques.jpg";
 
 // Mock data for the carousel cards
 const carouselData = [
@@ -19,7 +20,7 @@ const carouselData = [
     imageUrl: cryo,
   },
   {
-    title: "Lipocavitation",
+    title: "Radiofréquence",
     imageUrl: lipocavitation,
   },
   {
@@ -28,7 +29,11 @@ const carouselData = [
   },
   {
     title: "Formation Profesionnelle Maderothérapie",
-    imageUrl: soinminceursanschirurgie,
+    imageUrl: formationpro,
+  },
+  {
+    title: "Atelier holistiques",
+    imageUrl: atelierholistiques,
   },
 ];
 
