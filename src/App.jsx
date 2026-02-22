@@ -1,37 +1,48 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import LoadingPage from './components/LoadingPage';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import LoadingPage from "./components/LoadingPage";
 import "./App.css";
-import {
-  AboutMe,
-  Header,
-  OurServices,
-  SpecialityBanner,
-} from "./sections";
+import { AboutMe, Header, OurServices, SpecialityBanner } from "./sections";
 import { Footer, Navbar, Sidebar, PropulsedBanner } from "./components";
 import logo from "./assets/logonavbar.png";
-import OurSpecialities from './sections/OurSpecialities';
-import Welcome from './pages/Welcome';
-import imageLeft from './assets/blanc_logo.png';
-import imageRight from './assets/noir_logoo.png';
+import OurSpecialities from "./sections/OurSpecialities";
+import Welcome from "./pages/Welcome";
+import imageLeft from "./assets/blanc_logo.png";
+import imageRight from "./assets/noir_logoo.png";
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" }
-  }
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
 };
 
 function App() {
-  const [isQuebec, setIsQuebec] = useState(true);
-  const [isWelcome, setIsWelcome] = useState(true);
+  const [isQuebec, setIsQuebec] = useState(() => {
+    const saved = localStorage.getItem("isQuebec");
+    return saved !== null ? JSON.parse(saved) : true;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("isQuebec", JSON.stringify(isQuebec));
+  }, [isQuebec]);
+
+  const [isWelcome, setIsWelcome] = useState(() => {
+    return localStorage.getItem("isQuebec") === null;
+  });
 
   return (
     <>
       {isWelcome ? (
         <>
-          <Welcome imageLeft={imageLeft} imageRight={imageRight} isQuebec={isQuebec} setIsQuebec={setIsQuebec} setIsWelcome={setIsWelcome} />
+          <Welcome
+            imageLeft={imageLeft}
+            imageRight={imageRight}
+            isQuebec={isQuebec}
+            setIsQuebec={setIsQuebec}
+            setIsWelcome={setIsWelcome}
+          />
         </>
       ) : (
         <>
@@ -96,7 +107,7 @@ function App() {
                 </motion.div>
                 {/* <Reviews /> */}
                 {/* <SubscribeEmail />  */}
-                <Footer isQuebec={isQuebec} />
+                <Footer isQuebec={isQuebec} setIsQuebec={setIsQuebec} />
               </div>
             </motion.div>
             {/*   )} */}
