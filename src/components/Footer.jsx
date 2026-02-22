@@ -31,8 +31,8 @@ const Footer = ({ isQuebec }) => {
             </div>
             <div className="flex items-center">
               {isQuebec ? (
-                <a className="text-text" href="tel:367-382-6113" target="_blank" rel="noopener noreferrer">
-                  367-382-6113
+                <a className="text-text" href="tel:418-551-8939" target="_blank" rel="noopener noreferrer">
+                  (418) 551-8939
                 </a>
               ) : (
                 <a className="text-text" href="tel:581-993-5206" target="_blank" rel="noopener noreferrer">

@@ -6,7 +6,7 @@ import {
 import React from "react";
 
 const Sidebar = ({ isQuebec }) => {
-  const facebookLink = isQuebec ? "https://www.facebook.com/profile.php?id=61579787003229&rdid=Utbve2XH3ji8bx50&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F176ogKmKTT%2F%3Ffrom_xma_click%3Dxma_e2ee%26xma_click_id%3DD0E8D8ED-546B-497D-95A7-E91EB4F6A132%26tam_xma_content_type%3D0%26is_fb_content%3Dtrue%26forward%3Dfalse%26ts%3D1756060463630%26pl%3D1" : "https://www.facebook.com/genny.sante.beaute";
+  const facebookLink = isQuebec ? "https://www.facebook.com/share/1HKg8djioe/" : "https://www.facebook.com/share/17BHAymXyW/";
   return (
     <div
       id="sidebar"
@@ -22,7 +22,7 @@ const Sidebar = ({ isQuebec }) => {
           <FacebookOutlined fontSize="large" className="text-text hover:text-text hover:cursor-pointer" />
         </a>
         <a
-          href="https://www.instagram.com/genny.sante.beaute/"
+          href="https://www.instagram.com/gennysantebeaute?igsh=MW9kb25tMTN6bHl1Mw=="
           className="icon-link"
           target="_blank"
           rel="noopener noreferrer"
